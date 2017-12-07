@@ -33,7 +33,7 @@ footer {
   width: 100%;
   margin: 0 auto;
   background-color: #e6e8ed;
-  /*font-family: 'Aldrich', sans-serif;*/
+  font-family: 'Aldrich', sans-serif;
 }
 footer p {
   margin: 0;
@@ -49,11 +49,14 @@ footer :after {
   clear: both;
 }
 header {
-  /*font-family: 'Berkshire Swash', cursive;*/
+  font-family: 'Rancho', cursive;
+  position: sticky;
+  top: -15px;
+  z-index: 3;
 }
 body {
   background-color: #fcfcfc;
-  /*font-family: 'Zilla Slab', serif;*/
+  font-family: 'Zilla Slab', serif;
   font-size: 18px;
   line-height: 130%;
   background: #fff;
