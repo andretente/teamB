@@ -10,31 +10,13 @@ body {
   */
   margin-bottom: 50px;
 }
+
 footer {
   position: absolute;
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 80px;
-}
-/*
-  Other footer height for Boostrap xs, sm
-  (for breakpoint see: https://getbootstrap.com/css/)
-*/
-@media screen and (max-width: 969px) {
-  body {
-    margin-bottom: 300px;
-  }
-  footer {
-    height: 280px;
-  }
-}
-
-footer {
-  width: 100%;
-  margin: 0 auto;
-  background-color: #e6e8ed;
-  font-family: 'Aldrich', sans-serif;
 }
 
 footer p {
@@ -49,4 +31,17 @@ footer :after {
   content: "";
   display: table;
   clear: both;
+}
+
+/*
+  Other footer height for Boostrap xs, sm
+  (for breakpoint see: https://getbootstrap.com/css/)
+*/
+@media screen and (max-width: 969px) {
+  body {
+    margin-bottom: 300px;
+  }
+  footer {
+    height: 280px;
+  }
 }
