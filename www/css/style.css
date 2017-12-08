@@ -109,6 +109,9 @@ main.start-page div.online {
   right: 10px;
   top: 120px;
 }
+main.start-page .card-img-top {
+  height: 170px;
+}
 header {
   font-family: 'Rancho', cursive;
   position: sticky;
