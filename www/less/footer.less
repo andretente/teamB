@@ -9,7 +9,7 @@ body {
   /* Margin bottom by footer height
      or slightly more for more space before footer
   */
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 
 // footer {
@@ -20,21 +20,7 @@ body {
 //   // height: 80px;
 // }
 
-/*
-  Other footer height for Boostrap xs, sm
-  (for breakpoint see: https://getbootstrap.com/css/)
-*/
-@media screen and (max-width: 969px) {
 
-    body {
-      margin-bottom:300px;
-    }
-
-    footer {
-      height: 280px;
-    }
-
-}
 
 footer {
   position: absolute;
@@ -44,7 +30,7 @@ footer {
   height: 80px;
   width: 100%;
   margin: 0 auto;
-  background-color: #e6e8ed;
+  // background-color: #e6e8ed;
 
   font-family: 'Aldrich', sans-serif;
 
@@ -64,4 +50,20 @@ footer {
   display:  table;
   clear:  both;
   }
+}
+
+/*
+  Other footer height for Boostrap xs, sm
+  (for breakpoint see: https://getbootstrap.com/css/)
+*/
+@media screen and (max-width: 969px) {
+
+    body {
+      margin-bottom:300px;
+    }
+
+    footer {
+      height: 280px;
+    }
+
 }
