@@ -6,11 +6,17 @@ main.start-page {
 		top: 120px;
 	}
 
-	.card-img-top {
+	.card-body {
+		@media @tablet-min {
+		height: 200px;
+		}
+		@media @pc-min {
+			height: 140px;
+		}
+	}
+	
+	img.card-img-top {
 		height: 170px;
 	}
-
-
-
 
 }

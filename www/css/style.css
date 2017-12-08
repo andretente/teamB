@@ -28,7 +28,7 @@
 }
 @media screen and (min-width: 992px) {
   .rules .card img {
-    height: 250px;
+    height: 230px;
   }
 }
 .rules ul {
@@ -109,7 +109,17 @@ main.start-page div.online {
   right: 10px;
   top: 120px;
 }
-main.start-page .card-img-top {
+@media screen and (min-width: 768px) {
+  main.start-page .card-body {
+    height: 200px;
+  }
+}
+@media screen and (min-width: 992px) {
+  main.start-page .card-body {
+    height: 140px;
+  }
+}
+main.start-page img.card-img-top {
   height: 170px;
 }
 header {
