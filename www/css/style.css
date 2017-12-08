@@ -58,7 +58,8 @@
 .rules h2 {
   font-size: 2.4rem;
 }
-
+/* Sticky footer styles
+-------------------------------------------------- */
 html {
   position: relative;
   min-height: 100%;
@@ -68,13 +69,6 @@ body {
      or slightly more for more space before footer
   */
   margin-bottom: 50px;
-}
-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 80px;
 }
 /*
   Other footer height for Boostrap xs, sm
@@ -88,8 +82,11 @@ footer {
     height: 280px;
   }
 }
-
 footer {
+  position: absolute;
+  bottom: 0;
+  /* Set the fixed height of the footer here */
+  height: 80px;
   width: 100%;
   margin: 0 auto;
   background-color: #e6e8ed;
@@ -108,14 +105,12 @@ footer :after {
   display: table;
   clear: both;
 }
-
 header {
   font-family: 'Rancho', cursive;
   position: sticky;
   top: -1px;
   z-index: 3;
 }
-
 body {
   background-color: #fcfcfc;
   font-family: 'Zilla Slab', serif;

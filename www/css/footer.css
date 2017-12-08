@@ -29,12 +29,14 @@ footer {
     height: 280px;
   }
 }
+
 footer {
   width: 100%;
   margin: 0 auto;
   background-color: #e6e8ed;
   font-family: 'Aldrich', sans-serif;
 }
+
 footer p {
   margin: 0;
   text-align: center;
