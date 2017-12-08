@@ -30,8 +30,8 @@ header h1{
 
 .fyrairadimg img{
 	border: 2px solid black;
-	width: 60%;
-	height: 377px;
+	/*width: 60%;
+	height: 377px;*/
 	float: right;
 }
 
@@ -50,4 +50,26 @@ header h1{
 .buttonsnav button{
 	border-radius: 0px;
 	cursor: pointer;
+}
+
+.board {
+  width: 400px;
+  height: 900px;
+  transform-origin: 0 0;
+  /*transform: scale(0.33); - do by js instead */
+  display:none; /* don't show before js scale */
+}
+
+.square-odd, .square-even {
+  width: 57px;
+  height: 57px;
+  float: left;
+}
+
+.square-odd {
+  background-color: red;
+}
+
+.square-even {
+  background-color: blue;
 }
