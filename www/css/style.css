@@ -105,14 +105,14 @@ footer :after {
   }
 }
 header {
-  font-family: 'Rancho', cursive;
+  font-family: 'Aldrich', sans-serif;
   position: sticky;
   top: -1px;
   z-index: 3;
 }
 body {
   background-color: #fcfcfc;
-  font-family: 'Zilla Slab', serif;
+  font-family: 'Aldrich', sans-serif;
   font-size: 18px;
   line-height: 130%;
   background: #fff;
