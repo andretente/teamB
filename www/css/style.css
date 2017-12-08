@@ -1,5 +1,64 @@
-/* Sticky footer styles
--------------------------------------------------- */
+@media screen and (min-width: 768px) {
+  .rules .card {
+    height: 580px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .rules .card {
+    height: 520px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .rules .card {
+    height: 500px;
+  }
+}
+.rules .card img {
+  height: 230px;
+}
+@media screen and (min-width: 576px) {
+  .rules .card img {
+    height: 280px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .rules .card img {
+    height: 200px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .rules .card img {
+    height: 250px;
+  }
+}
+.rules ul {
+  padding-left: 20px;
+}
+.rules ul.markers li {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  border: 1px solid #ef4644;
+  background-color: #ef4644;
+  list-style-type: none;
+  margin: 10px 15px 15px 10px;
+}
+.rules ul.markers li.yellow {
+  border: 1px solid #ffeb3f;
+  background-color: #ffeb3f;
+}
+.rules ul.markers li.hide {
+  display: none;
+}
+@media screen and (min-width: 576px) {
+  .rules ul.markers li.hide {
+    display: inherit;
+  }
+}
+.rules h2 {
+  font-size: 2.4rem;
+}
+
 html {
   position: relative;
   min-height: 100%;
@@ -29,6 +88,7 @@ footer {
     height: 280px;
   }
 }
+
 footer {
   width: 100%;
   margin: 0 auto;
@@ -48,12 +108,14 @@ footer :after {
   display: table;
   clear: both;
 }
+
 header {
   font-family: 'Rancho', cursive;
   position: sticky;
   top: -1px;
   z-index: 3;
 }
+
 body {
   background-color: #fcfcfc;
   font-family: 'Zilla Slab', serif;

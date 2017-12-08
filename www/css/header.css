@@ -1,0 +1,6 @@
+header {
+  font-family: 'Rancho', cursive;
+  position: sticky;
+  top: -1px;
+  z-index: 3;
+}
