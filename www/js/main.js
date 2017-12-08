@@ -1,10 +1,11 @@
 let players = [];
-let spelSetup = new SpelSetup();
-spelSetup.renderForm();
-
+let gameSetup = new GameSetup();
+let hiScore = new HiScore();
+gameSetup.renderForm();
+hiScore.renderHiScore();
 
 $(document).on("click", '#btn-addPlayers', function() {
 
-  spelSetup.startGame();
+  gameSetup.startGame();
   console.log(players);
 });

@@ -1,4 +1,4 @@
-class SpelSetup extends Base{
+class GameSetup extends Base{
   constructor(name,type) {
     super();
     this.players = [];
@@ -8,10 +8,10 @@ class SpelSetup extends Base{
     $('.form').append(
         `
         <div class="row mt-4">
-          <h3 class="col-6 mx-auto">Spelare ${player}</h3>
+          <h3 class="col-12 col-md-8 col-lg-8 mx-auto">Spelare ${player}</h3>
         </div>
         <div class="row mt-2">
-          <div class="col-6 mx-auto d-inline-flex">
+          <div class="col-12 col-md-8 col-lg-8 mx-auto d-inline-flex">
             <input type="text" class="form-control" id="playerName" aria-label="Spelare namn" placeholder="Spelare Namn">
             <button class="btn btn-secondary dropdown-toggle ml-2" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Type
@@ -27,6 +27,16 @@ class SpelSetup extends Base{
   }
 
   renderForm(){
+    $('.form').prepend(
+      `
+      <div class="row mt-4">
+        <div class="col-12">
+          <h2 class="text-center">Spela</h2>
+        </div>
+      </div>
+
+      `
+    );
     let co = 0;
     for (var i = 0; i < 2; i++)  {
       this.drawForm(i+1);
@@ -35,7 +45,7 @@ class SpelSetup extends Base{
     $('.form').append(
       `
       <div class="row mt-4">
-        <div class="col-6 mx-auto">
+        <div class="col-12 col-md-8 col-lg-8 mx-auto">
           <button type="button" class="btn btn-primary float-left" id="btn-addPlayers">Starta</button>
         </div>
       </div>
