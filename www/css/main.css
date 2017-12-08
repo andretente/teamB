@@ -1,0 +1,78 @@
+<<<<<<< HEAD
+=======
+.navbar{
+	margin: auto;
+	border: 0px solid black;
+}
+
+header a{
+	font-size: 40px;
+	align-content: center;
+}
+
+header h1{
+	font-size: 60px;
+	color: white;
+	width: 30%;
+	text-shadow: 2px 2px 2px black;
+}
+
+.jumbotron{
+	border-radius: 0;
+	border: 2px solid black;
+}
+
+.jumbotron p{
+	font-size: 20px;
+}
+
+.jumbotron .btn{
+	border: 1px solid black;
+}
+
+.fyrairadimg img{
+	border: 2px solid black;
+	/*width: 60%;
+	height: 377px;*/
+	float: right;
+}
+
+.buttonsnav{
+	border: 2px solid black;
+}
+
+.buttonsnav h1{
+	font-size: 20px;
+	color: white;
+	width: 100%;
+	margin-top: 5px;
+	text-shadow: 2px 2px 2px black;
+}
+
+.buttonsnav button{
+	border-radius: 0px;
+	cursor: pointer;
+}
+
+.board {
+  width: 400px;
+  height: 900px;
+  transform-origin: 0 0;
+  /*transform: scale(0.33); - do by js instead */
+  display:none; /* don't show before js scale */
+}
+
+.square-odd, .square-even {
+  width: 57px;
+  height: 57px;
+  float: left;
+}
+
+.square-odd {
+  background-color: red;
+}
+
+.square-even {
+  background-color: blue;
+}
+>>>>>>> master
