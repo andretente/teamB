@@ -1,8 +1,7 @@
 class ComputerPlayer extends Player {
-	constructor(index, score){
-		super();
-		this.index = index;
-		this.score = score;
+	constructor(name, index, score){
+		super(name, index, score, color);
+
 	}
 
   makeMove(){
