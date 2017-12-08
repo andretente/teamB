@@ -9,7 +9,7 @@ class HiScore extends Base{
         `
         <li class="list-group-item d-flex justify-content-between align-items-center mt-2">
           Spelare ${player}
-          <span class="badge badge-primary badge-pill">14</span>
+          <span class="badge badge-primary badge-pill">Score</span>
         </li>
         `
     );

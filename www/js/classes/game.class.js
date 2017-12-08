@@ -12,13 +12,14 @@ class GameSetup extends Base{
         </div>
         <div class="row mt-2">
           <div class="col-12 col-md-8 col-lg-8 mx-auto d-inline-flex">
-            <input type="text" class="form-control" id="playerName" aria-label="Spelare namn" placeholder="Spelare Namn">
-            <button class="btn btn-secondary dropdown-toggle ml-2" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Type
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">Human</a>
-              <a class="dropdown-item" href="#">Robot</a>
+            <div class="col-10 m-0 p-0">
+              <input type="text" class="form-control" id="playerName" aria-label="Spelare namn" placeholder="Spelare Namn">
+            </div>
+            <div class="col-2">
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option>Human</option>
+                <option>Robot</option>
+              </select>
             </div>
           </div>
         </div>
