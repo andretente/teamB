@@ -104,15 +104,20 @@ footer :after {
     height: 280px;
   }
 }
+main.start-page div.online {
+  position: absolute;
+  right: 10px;
+  top: 120px;
+}
 header {
-  font-family: 'Aldrich', sans-serif;
+  font-family: 'Rancho', cursive;
   position: sticky;
   top: -1px;
   z-index: 3;
 }
 body {
   background-color: #fcfcfc;
-  font-family: 'Aldrich', sans-serif;
+  font-family: 'Zilla Slab', serif;
   font-size: 18px;
   line-height: 130%;
   background: #fff;
