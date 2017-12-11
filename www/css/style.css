@@ -74,7 +74,6 @@ footer {
   position: absolute;
   bottom: 0;
   /* Set the fixed height of the footer here */
-  height: 80px;
   width: 100%;
   margin: 0 auto;
   font-family: 'Aldrich', sans-serif;
@@ -105,14 +104,14 @@ footer :after {
   }
 }
 header {
-  font-family: 'Aldrich', sans-serif;
+  font-family: 'Rancho', cursive;
   position: sticky;
   top: -1px;
   z-index: 3;
 }
 body {
   background-color: #fcfcfc;
-  font-family: 'Aldrich', sans-serif;
+  font-family: 'Zilla Slab', serif;
   font-size: 18px;
   line-height: 130%;
   background: #fff;
