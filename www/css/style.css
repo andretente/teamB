@@ -28,7 +28,7 @@
 }
 @media screen and (min-width: 992px) {
   .rules .card img {
-    height: 250px;
+    height: 230px;
   }
 }
 .rules ul {
@@ -102,6 +102,24 @@ footer :after {
   footer {
     height: 280px;
   }
+}
+main.start-page div.online {
+  position: absolute;
+  right: 10px;
+  top: 120px;
+}
+@media screen and (min-width: 768px) {
+  main.start-page .card-body {
+    height: 200px;
+  }
+}
+@media screen and (min-width: 992px) {
+  main.start-page .card-body {
+    height: 140px;
+  }
+}
+main.start-page img.card-img-top {
+  height: 170px;
 }
 header {
   font-family: 'Rancho', cursive;
