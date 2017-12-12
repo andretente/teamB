@@ -74,7 +74,6 @@ footer {
   position: absolute;
   bottom: 0;
   /* Set the fixed height of the footer here */
-  height: 80px;
   width: 100%;
   margin: 0 auto;
   font-family: 'Aldrich', sans-serif;
