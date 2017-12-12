@@ -5,6 +5,8 @@ class Player extends Base{
     this.index = index;
     this.score = score;
     this.color = color;
+    this.wins = 0;
+    this.losses = 0;
   }
 
   defaults(){
@@ -12,6 +14,14 @@ class Player extends Base{
       name: 'Spelare Namn',
       type: 'Human/ Robot'
     };
+  }
+
+  win(){
+    this.wins++;
+  }
+
+  loose() {
+    this.loose++;
   }
 
 	play(columnIndex){
