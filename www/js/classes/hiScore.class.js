@@ -8,7 +8,7 @@ class HiScore extends Base{
     $('.score-list').append(
         `
         <li class="list-group-item d-flex justify-content-between align-items-center mt-2">
-          Spelare ${player}
+          ${player}) Spelare X
           <span class="badge badge-primary badge-pill">Score</span>
         </li>
         `
