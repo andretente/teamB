@@ -15,7 +15,7 @@
 .board-holder {
 	overflow: hidden;
 	margin: 20px auto;
-	background-color: #777;
+	background-color: #000;
 	/* set width and height from js */
 }
 
