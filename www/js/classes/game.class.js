@@ -47,7 +47,7 @@ class GameSetup extends Base{
       `
       <div class="row mt-4">
         <div class="col-12 col-md-8 col-lg-8 mx-auto">
-          <button type="button" class="btn btn-primary float-left" id="btn-addPlayers">Starta</button>
+          <a href="board.html" class="btn btn-primary float-left" id="btn-addPlayers">Starta</a>
         </div>
       </div>
       `
