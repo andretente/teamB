@@ -1,6 +1,5 @@
 class App{
 
-
   constructor(){
 	  //super();
 	}
