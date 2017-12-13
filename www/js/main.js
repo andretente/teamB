@@ -1,11 +1,12 @@
 let players = [];
-let gameSetup = new GameSetup();
-let hiScore = new HiScore();
+let gameSetup = new App();
+let hiScore = new App();
+let addPlayers = new GameSetup();
 gameSetup.renderForm();
 hiScore.renderHiScore();
 
 $(document).on("click", '#btn-addPlayers', function() {
 
-  gameSetup.startGame();
+  addPlayers.startGame();
   console.log(players);
 });
