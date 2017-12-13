@@ -1,13 +1,19 @@
-class Board extends Base{
-  constructor(numOfColumns, numberOfRows){
-    super();
-    this.numOfColumns = numOfColumns;
-    this.numberOfRows = numberOfRows;
+class BoardBase {
 
-  }
-  // has a number of slots and columns etc
-  checkIfWinningPlayer(){
-
-  }
-  
+	
 }
+
+
+// class Board extends Base{
+//   constructor(numOfColumns, numberOfRows){
+//     super();
+//     this.numOfColumns = numOfColumns;
+//     this.numberOfRows = numberOfRows;
+
+//   }
+//   // has a number of slots and columns etc
+//   checkIfWinningPlayer(){
+
+//   }
+  
+// }
