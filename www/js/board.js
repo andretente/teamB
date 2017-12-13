@@ -28,7 +28,6 @@ $(document).on('click', '.slot', function(){
 	let playerID = 2; //activePlayer
 
 
-  let emptySlotRow = 0;
   let quit = false;
   let iRow = 0;
 	while(iRow < 6 && !quit){
@@ -37,13 +36,12 @@ $(document).on('click', '.slot', function(){
 			quit = true;
 		}
 		else{
-			emptySlotRow = iRow;
+			iRow++;
 		}
-
-		iRow++;
 	}
 
-	board[emptySlotRow][col] = playerID;
+  iRow--;
+	board[iRow][col] = playerID;
 
 	drawBoard();
 });
