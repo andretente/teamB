@@ -1,4 +1,4 @@
-class GameSetup extends Base{
+  class GameSetup extends Base{
   constructor(name,type) {
     super();
     this.players = [];

@@ -68,6 +68,7 @@ function drawBoard(){
 drawBoard();
 
 ///////////////////////////////////////////////////////////////////////////
+
 function scale() {
 	let orgW = 700, orgH = 600;
 	let w = $(window).width();
