@@ -8,6 +8,7 @@ class Player extends Base{
     this.color = color;
     this.wins = 0;
     this.losses = 0;
+    this.players = [];
 
     if (hiscorelist[this.name]) {
       this.wins = hiscorelist[this.name].wins;
