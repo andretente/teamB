@@ -5,12 +5,7 @@
   }
 
 
-  addPlayer(){
-     players.push(new Player({
-      name: $('#playerName').val(),
-      type: $('#type').val()
-    }));
-  }
+  
   startGame(){
 
     // players.push(new Player({

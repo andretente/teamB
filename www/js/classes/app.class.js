@@ -37,36 +37,4 @@ class App{
       co++;
     }
   }
-
-	drawForm(player){
-    $('.form').append(
-        `
-
-        `
-    );
-  }
-
-  renderForm(){
-    $('.form').prepend(
-      `
-      <div class="row mt-4">
-        <div class="col-12">
-          <h2 class="text-center">Spela</h2>
-        </div>
-      </div>
-
-      `
-    );
-    let co = 0;
-    for (var i = 0; i < 2; i++)  {
-      this.drawForm(i+1);
-      co++;
-    }
-    $('.form').append(
-      `
-
-      `
-    );
-
-  }
 }

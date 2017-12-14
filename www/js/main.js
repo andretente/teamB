@@ -1,8 +1,5 @@
-
-// let vinList = new List();
-// let lossLiat = new List();
-
-let myGame = new GameSetup();
+let players = [];
+let myGame = new Player();
 
 
 // // Tell jsonflex what classes we expect it to save/load
@@ -30,14 +27,15 @@ let myGame = new GameSetup();
 
 
 
-let players = [];
-let gameSetup = new App();
-let hiScore = new App();
-let addPlayers = new GameSetup();
-gameSetup.renderForm();
-hiScore.renderHiScore();
+
+//let gameSetup = new App();
+//let hiScore = new App();
+//let addPlayers = new GameSetup();
+
+//hiScore.renderHiScore();
 
 $(document).on("click", '#btn-addPlayers', function() {
-  myGame.addPlayer();
+  myGame.addPlayers();
+  JSON._save('players.json', players);
   console.log(players);
 });
