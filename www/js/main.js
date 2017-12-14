@@ -2,6 +2,11 @@ let players = [];
 let myGame = new Player();
 
 
+JSON._load('players.json')
+.then(function(data){
+   players = data;
+   new HiScore();
+});
 // // Tell jsonflex what classes we expect it to save/load
 // JSON._classes(List);
 
@@ -25,17 +30,9 @@ let myGame = new Player();
 // 	renderLossList();
 // }
 
-
-
-
-//let gameSetup = new App();
 //let hiScore = new App();
-//let addPlayers = new GameSetup();
-
 //hiScore.renderHiScore();
 
 $(document).on("click", '#btn-addPlayers', function() {
   myGame.addPlayers();
-  JSON._save('players.json', players);
-  console.log(players);
 });

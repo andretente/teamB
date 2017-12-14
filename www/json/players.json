@@ -1,16 +1,32 @@
 [
   {
-    "name": {
-      "name": "aaa",
-      "type": "Human",
-      "hiScore": 10
-    }
+    "name": "André",
+    "type": "Human",
+    "hiScore": 0
   },
   {
-    "name": {
-      "name": "qqq",
-      "type": "Human",
-      "hiScore": 10
-    }
+    "name": "Aiko",
+    "type": "Human",
+    "hiScore": 0
+  },
+  {
+    "name": "Tobias",
+    "type": "Human",
+    "hiScore": 0
+  },
+  {
+    "name": "Johan",
+    "type": "Human",
+    "hiScore": 0
+  },
+  {
+    "name": "Anja",
+    "type": "Human",
+    "hiScore": 0
+  },
+  {
+    "name": "Robot",
+    "type": "Robot",
+    "hiScore": 0
   }
 ]
