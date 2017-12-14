@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Aiko",
+    "hiScore": "15",
+    "type": "Human"
+  },
+  {
+    "name": "Anja",
+    "hiScore": "10",
+    "type": "Human"
+  },
+  {
+    "name": "André",
+    "hiScore": "1",
+    "type": "Human"
+  },
+  {
+    "name": "Johan",
+    "hiScore": "12",
+    "type": "Human"
+  }
+]

@@ -3,7 +3,6 @@
 // let lossLiat = new List();
 
 let myGame = new GameSetup();
-myGame.startGame();
 
 let hiscorelist = {
   'player1': { 'wins': 3, loss: 1},
@@ -43,7 +42,6 @@ gameSetup.renderForm();
 hiScore.renderHiScore();
 
 $(document).on("click", '#btn-addPlayers', function() {
-
-  addPlayers.startGame();
+  myGame.addPlayer();
   console.log(players);
 });

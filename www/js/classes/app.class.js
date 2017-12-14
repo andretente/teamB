@@ -81,7 +81,7 @@ class App{
       `
       <div class="row mt-4">
         <div class="col-12 col-md-8 col-lg-8 mx-auto">
-          <a href="#" class="btn btn-primary float-left" id="btn-addPlayers">Starta</a>
+          <a href="#" class="btn btn-primary float-left" id="btn-addPlayers">Starta Not Connected</a>
         </div>
       </div>
       `
