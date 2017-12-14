@@ -4,10 +4,6 @@
 
 let myGame = new GameSetup();
 
-let hiscorelist = {
-  'player1': { 'wins': 3, loss: 1},
-  'player2': { wins: 3, loss: 1},
-}
 
 // // Tell jsonflex what classes we expect it to save/load
 // JSON._classes(List);
