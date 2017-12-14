@@ -1,41 +1,26 @@
 class Player extends Base{
-  constructor(name, type, color){
-    super();
-    this.name = name;
-    this.type = type;
-    this.numOfGames = 0;
-    this.score = 0;
-    this.color = color;
-    this.wins = 0;
-    this.losses = 0;
 
-    if (hiscorelist[this.name]) {
-      this.wins = hiscorelist[this.name].wins;
-      this.loss = hiscorelist[this.name].loss;
+  defaults(){
+    return{
+      name: 'Player Name',
+      type: 'Human or Robot',
+      hiScore: 'Highest score'
     }
   }
 
-  defaults(){
-    return {
-      name: 'Spelare Namn',
-      type: 'Human/ Robot'
-    };
+  addPlayers(){
+     players.push(new Player({
+      name: $('#playerName1').val(),
+      type: $('#type1').val(),
+      hiScore: 0
+    }));
+    players.push(new Player({
+     name: $('#playerName2').val(),
+     type: $('#type2').val(),
+     hiScore: 0
+   }));
+   JSON._save('players.json', players);
+   $('#playerName1').val('');
+   $('#playerName2').val('');
   }
-
-  win(){
-    this.wins++;
-    // update the highscorelist
-    // then save it to JSON
-  }
-
-  loose() {
-    this.loose++;
-    // update the highscorelist
-    // then save it to JSON
-  }
-
-	play(columnIndex){
-
-	}
-
 }
