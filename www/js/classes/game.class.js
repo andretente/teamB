@@ -1,17 +1,23 @@
   class GameSetup extends Base{
-  constructor(name,type) {
+  constructor() {
     super();
     this.players = [];
   }
 
-
-
-  startGame(){
-
-    players.push(new Player({
+  
+  addPlayer(){
+     players.push(new Player({
       name: $('#playerName').val(),
       type: $('#type').val()
     }));
+
+  }
+  startGame(){
+
+    // players.push(new Player({
+    //   name: $('#playerName').val(),
+    //   type: $('#type').val()
+    // }));
     // this.addToList();
     // $('#title').val('');
     // $('#description').val('');

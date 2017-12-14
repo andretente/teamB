@@ -23,22 +23,26 @@ $(document).on('click', '.slot', function(){
 	let slot = $(this);
 	let row = slot.data('rowid');
 	let col = slot.data('colid');
+	console.log('row', row);
+	console.log('col', col);
 	let playerID = 2; //activePlayer
-	// let i=0;
 
-	for(i=0; i<7; i++) { 
-		let val = board[row][col];
-		console.log('VAL',val);
-		if (val = 1 ) {
-		board[row][col] = playerID;
-		console.log('I',i);	
-		}	
-		i++;
+
+  let quit = false;
+  let iRow = 0;
+	while(iRow < 6 && !quit){
+		let val = board[iRow][col];
+		if(val != 0) {
+			quit = true;
+		}
+		else{
+			iRow++;
+		}
 	}
-	
-	// console.log('ROW',row);
-	// console.log('COL',col);
-	// console.log('PLAYER',playerID);
+
+  iRow--;
+	board[iRow][col] = playerID;
+
 	drawBoard();
 });
 	
@@ -71,7 +75,7 @@ function drawBoard(){
 
 			if(val == 0){
 				//free slot
-				// html+=`<div class="slot" data-id="row${row},col${col}">`;
+				// html+=`<div class="slot" data-id="row${row},ol${col}">`;
 				html+=`<div class="slot" data-rowid="${row}" data-colid="${col}">`;
 				// html += '';
 			}

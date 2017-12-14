@@ -2,6 +2,8 @@
 // let vinList = new List();
 // let lossLiat = new List();
 
+let myGame = new GameSetup();
+myGame.startGame();
 
 let hiscorelist = {
   'player1': { 'wins': 3, loss: 1},
