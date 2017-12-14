@@ -4,7 +4,6 @@ class HiScore extends Base{
     this.players = players;
     this.renderHiscore();
   }
-
   renderHiscore(){
     let co = 1;
     for (let player of players) {
@@ -17,5 +16,4 @@ class HiScore extends Base{
       co++;
     }
   }
-
 }
