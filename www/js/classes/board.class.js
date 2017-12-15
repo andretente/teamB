@@ -7,6 +7,10 @@ class Board {
 			[0,0,0,0,0,0,0],
 			[0,0,0,0,0,0,0],
 			[0,0,0,0,0,0,0],
+<<<<<<< Updated upstream
+=======
+			[0,0,0,0,0,0,0],
+>>>>>>> Stashed changes
 			[2,0,0,0,0,0,2]
 		];
 
@@ -86,8 +90,7 @@ class Board {
 				board[freeSlot][col] = playerID;
 				that.drawBoard();
 			}
-				check.checkWin();
-
+			check.checkWin();
 		});
 	}
 
@@ -120,9 +123,8 @@ class Board {
 				freeSlots = freeSlots || b[row][col]==0;
 	    }
 		}
-		console.log(win ? win:(!freeSlots ? 'Draw': false));	
+		console.log(win ? win:(!freeSlots ? 'Draw': false));
 		return win ? win:(!freeSlots ? 'Draw': false);
 	}
 
 }
-
