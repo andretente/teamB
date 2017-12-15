@@ -1,2 +1,2 @@
 
-let board = new Board();
+// let board = new Board();

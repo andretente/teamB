@@ -3,11 +3,11 @@ class Board {
 	constructor() {
 		this.board = [
 			[0,0,0,0,0,0,0],
+			[0,0,0,0,0,0,1],
 			[0,0,0,0,0,0,0],
 			[0,0,0,0,0,0,0],
 			[0,0,0,0,0,0,0],
-			[0,0,0,0,0,0,0],
-			[2,0,0,0,0,0,1]
+			[2,0,0,0,0,0,2]
 		];
 
 		this.drawBoard();
@@ -85,8 +85,8 @@ class Board {
 			if(freeSlot != undefined) {
 				board[freeSlot][col] = playerID;
 				that.drawBoard();
-				check.checkWin();
 			}
+				check.checkWin();
 
 		});
 	}
@@ -107,19 +107,22 @@ class Board {
                 win=p;
 								console.log('Player '+ p + ' wins horizontally');
             }
-            else if(row < 3 && b[row][col]==p && b[row1+1][col+1]==p && b[row+2][col+2]==p && b[row+3][col+3]==p ){
+            else if(row < 3 && b[row][col]==p && b[row+1][col+1]==p && b[row+2][col+2]==p && b[row+3][col+3]==p ){
                 win=p;
+                console.log('Player '+ p + ' wins diagonally 1');
             }
-            else if(row < 3 && b[row][col]==p && b[row1-1][col-1]==p && b[row-2][col-2]==p && b[row-3][col-3]==p ){
+            else if(row < 3 && b[row][col]==p && b[row+1][col-1]==p && b[row+2][col-2]==p && b[row+3][col-3]==p ){
                 win=p;
+                console.log('Player '+ p + ' wins diagonally 2');
+
             }
         }
 				freeSlots = freeSlots || b[row][col]==0;
 	    }
 		}
-		if (freeSlots==false) {
-			return win ? win:(!freeSlots ? 'Draw': false);
-		}
+		console.log(win ? win:(!freeSlots ? 'Draw': false));	
+		return win ? win:(!freeSlots ? 'Draw': false);
 	}
 
 }
+
