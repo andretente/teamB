@@ -11,7 +11,7 @@ class HiScore extends Base {
       $('.score-list').append(`
         <li class="list-group-item d-flex justify-content-between align-items-center mt-2">
           ${co}) ${player.name}
-          <span class="badge badge-primary badge-pill">${player.hiScore}</span>
+          <span class="badge badge-primary badge-pill">${player.score}</span>
         </li>
       `);
       co++;
@@ -21,11 +21,7 @@ class HiScore extends Base {
 
   // Sort the highscore list
   sortHiScore() {
-    players.sort((a, b) => a.hiScore - b.hiScore);
+    players.sort((a, b) => a.score - b.score);
   }
 
 }
-
-
-
-

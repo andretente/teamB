@@ -1,5 +1,4 @@
 class Board {
-
 	constructor() {
 		this.board = [
 			[0,0,0,0,0,0,0],
@@ -9,7 +8,6 @@ class Board {
 			[0,0,0,0,0,0,0],
 			[2,0,0,0,0,0,2]
 		];
-
 		this.drawBoard();
 		this.scale();
 		this.addClickEvents();

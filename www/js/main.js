@@ -1,7 +1,7 @@
-let players = [];
+//let players = [];
 let frontPage = new FrontPage();
 let rulesPage = new RulesPage();
-let myGame = new Player();
+let myGame = new Game();
 let myBoard = new Board();
 //board.drawBoard();
 //board.scale();

@@ -1,24 +1,24 @@
-class GameSetup extends Base{
-constructor() {
-  super();
-  this.players = [];
-}
+class Game extends Base{
+  constructor() {
+    super();
+    this.players = [];
+  }
 
-
-
-
-startGame(){
-  // players.push(new Player({
-  //   name: $('#playerName').val(),
-  //   type: $('#type').val()
-  // }));
-
-  // this.addToList();
-  // $('#title').val('');
-  // $('#description').val('');
-  // $('#date').val('');
-}
-
+  addPlayers(){
+     players.push(new Player({
+      name: $('#playerName1').val(),
+      type: $('#type1').val(),
+      score: 0
+    }));
+    players.push(new Player({
+     name: $('#playerName2').val(),
+     type: $('#type2').val(),
+     score: 0
+   }));
+   JSON._save('players.json', players);
+   $('#playerName1').val('');
+   $('#playerName2').val('');
+  }
 }
 
 

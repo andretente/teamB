@@ -5,9 +5,11 @@
     "hiScore": 12
   },
   {
-    "name": "Aiko",
-    "type": "Human",
-    "hiScore": 10
+    "name": {
+      "name": "Thomas",
+      "type": "Human",
+      "score": 0
+    }
   },
   {
     "name": "Tobias",
@@ -25,23 +27,22 @@
     "hiScore": 0
   },
   {
-    "name": "",
+    "name": "Aiko",
     "type": "Human",
-    "hiScore": 0
+    "hiScore": 10
   },
   {
-    "name": "",
-    "type": "Human",
-    "hiScore": 0
+    "name": {
+      "name": "erqr",
+      "type": "Human",
+      "score": 0
+    }
   },
   {
-    "name": "",
-    "type": "Human",
-    "hiScore": 0
-  },
-  {
-    "name": "",
-    "type": "Human",
-    "hiScore": 0
+    "name": {
+      "name": "qetq",
+      "type": "Human",
+      "score": 0
+    }
   }
 ]
