@@ -7,13 +7,7 @@ constructor() {
 
 checkWin(slotIndex){
   //Horizontal Check Right
-  for (var i = 0; i < 4; i++) {
-    let checkRight = slotIndex++;
-    let checkLeft = slotIndex--;
-    board[checkRight];
-    board
-    if()
-  }
+  
 }
 
 startGame(){

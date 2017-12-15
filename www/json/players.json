@@ -23,40 +23,5 @@
     "name": "Anja",
     "type": "Human",
     "hiScore": 0
-  },
-  {
-    "name": "Robot",
-    "type": "Robot",
-    "hiScore": 0
-  },
-  {
-    "name": "Donald",
-    "type": "Human",
-    "hiScore": 0
-  },
-  {
-    "name": "Duck",
-    "type": "Robot",
-    "hiScore": 0
-  },
-  {
-    "name": "Mickey",
-    "type": "Human",
-    "hiScore": 0
-  },
-  {
-    "name": "Mouse",
-    "type": "Robot",
-    "hiScore": 0
-  },
-  {
-    "name": "",
-    "type": "Human",
-    "hiScore": 0
-  },
-  {
-    "name": "",
-    "type": "Human",
-    "hiScore": 0
   }
 ]
