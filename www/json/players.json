@@ -25,28 +25,13 @@
     "hiScore": 0
   },
   {
-    "name": "Robot",
-    "type": "Robot",
-    "hiScore": 0
-  },
-  {
-    "name": "Donald",
+    "name": "",
     "type": "Human",
     "hiScore": 0
   },
   {
-    "name": "Duck",
-    "type": "Robot",
-    "hiScore": 0
-  },
-  {
-    "name": "Mickey",
+    "name": "",
     "type": "Human",
-    "hiScore": 0
-  },
-  {
-    "name": "Mouse",
-    "type": "Robot",
     "hiScore": 0
   }
 ]

@@ -1,2 +1,4 @@
 node_modules
 .DS_Store
+board2.js
+boardBase.class.js

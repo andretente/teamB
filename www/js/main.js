@@ -1,6 +1,11 @@
 let players = [];
+let frontPage = new FrontPage();
 let myGame = new Player();
+let myBoard = new Board();
+//board.drawBoard();
+//board.scale();
 
+frontPage;
 
 JSON._load('players.json')
 .then(function(data){
