@@ -1,7 +1,7 @@
 class HiScore extends Base{
   constructor() {
     super();
-    this.players = players;
+    //this.players = players;
     this.renderHiscore();
   }
   renderHiscore(){
