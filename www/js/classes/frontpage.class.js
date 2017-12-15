@@ -34,7 +34,7 @@ class FrontPage extends Base{
 		              		</a>
 			              	<div class="card-body online-game">
 			                	<h4 class="card-title text-info">Plants vs Zombies</h4>
-			                	<p class="card-text">Kydda ett hus från attackerande zombier genom att plantera flera olika plantor. </p>
+			                	<p class="card-text">Skydda ett hus från attackerande zombier genom att plantera flera olika plantor. </p>
 			              	</div>
 			            </div>
 		            </div>
@@ -48,8 +48,8 @@ class FrontPage extends Base{
 			                	<img class="card-img-top" src="/img/pengu-3.jpg" alt="The game bomberpengu">
 			              	</a>
 			              	<div class="card-body online-game">
-			                	<h4 class="card-title text-info">Bomberpungu</h4>
-			                	<p class="card-text">Kydda ett hus från attackerande zombier genom att plantera flera olika plantor. </p>
+			                	<h4 class="card-title text-info">Bomberpengu</h4>
+			                	<p class="card-text">Till skillnad från den klassiska Bomberman spelar man som namnet på spelet redan föreslår som en pingvin.</p>
 			              	</div>
 			            </div>
 			        </div>
@@ -64,7 +64,7 @@ class FrontPage extends Base{
 			              	</a>
 			              	<div class="card-body online-game">
 			                	<h4 class="card-title text-info">Guns n Glory Heroes</h4>
-			                	<p class="card-text">Kydda ett hus från attackerande zombier genom att plantera flera olika plantor. </p>
+			                	<p class="card-text">Anslut dig till hjältarna i deras krig mot ondskan och skriv historia.</p>
 			              	</div>
 			            </div>
 			        </div>
