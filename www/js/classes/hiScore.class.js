@@ -21,7 +21,7 @@ class HiScore extends Base {
 
   // Sort the highscore list
   sortHiScore() {
-    players.sort((a, b) => b.hiScore - a.hiScore);
+    players.sort((a, b) => a.hiScore - b.hiScore);
   }
 
 }
