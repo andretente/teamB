@@ -16,7 +16,3 @@ JSON._load('players.json')
 $(document).on("click", '#btn-addPlayers', function() {
   myGame.addPlayers();
 });
-
-$(document).on('click', '.slot', function(){
-  myBoard.addSlot();
-});
