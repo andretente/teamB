@@ -1,10 +1,11 @@
 class HiScore extends Base {
   constructor() {
     super();
-    //this.players = players;
+    this.players = players;
+    this.sortHiScore();
     this.renderHiscore();
   }
-  renderHiscore(){
+  renderHiscore() {
     let co = 1;
     for (let player of players) {
       $('.score-list').append(`
@@ -16,25 +17,15 @@ class HiScore extends Base {
       co++;
     }
   }
+
+
+  // Sort the highscore list
+  sortHiScore() {
+    players.sort((a, b) => b.hiScore - a.hiScore);
+  }
+
 }
 
 
 
-//   //Aiko - function to save game data
-// saveGameData() { }
-
-// JSON._save('hiscore.json', hiscore).then(function(){
-//   console.log('Saved!');
-// });
-
-
-
-  
-//  // let gameData = [{name:this.name, score: this.score, win: this.win, loos: this.loos}];
-  //await JSON._save('hiscore.json', hiscore).then;
-  //console.log('Saved!');
-  //}
-
-
-  
 

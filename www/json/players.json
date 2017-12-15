@@ -2,17 +2,17 @@
   {
     "name": "André",
     "type": "Human",
-    "hiScore": 0
+    "hiScore": 12
   },
   {
     "name": "Aiko",
     "type": "Human",
-    "hiScore": 0
+    "hiScore": 10
   },
   {
     "name": "Tobias",
     "type": "Human",
-    "hiScore": 0
+    "hiScore": 8
   },
   {
     "name": "Johan",
@@ -33,5 +33,24 @@
     "name": "",
     "type": "Human",
     "hiScore": 0
+<<<<<<<
+
+=======
+  },
+  {
+    "name": "Mouse",
+    "type": "Robot",
+    "hiScore": 0
+  },
+  {
+    "name": "sa",
+    "type": "Human",
+    "hiScore": 0
+  },
+  {
+    "name": "ta",
+    "type": "Human",
+    "hiScore": 0
+>>>>>>>
   }
 ]
