@@ -93,15 +93,19 @@ class Board {
 
 	checkWin(){
 		let b = this.board;
+		let win;
+		let freeSlots = false;
 	  //Vertical Check
 		for (let row = 0; row < 6; row++) {
 	    for (let col = 0; col < 7; col++){
-        for(let p of [1]){
+        for(let p of [1,2]){
             if(row < 3 && b[row][col]==p && b[row+1][col]==p && b[row+2][col]==p && b[row+3][col]==p ){
                 win=p;
+								console.log('Player '+ p + ' wins vertically');
             }
             else if(col < 4 && b[row][col]==p && b[row][col+1]==p && b[row][col+2]==p && b[row][col+3]==p ){
                 win=p;
+								console.log('Player '+ p + ' wins horizontally');
             }
             else if(row < 3 && b[row][col]==p && b[row1+1][col+1]==p && b[row+2][col+2]==p && b[row+3][col+3]==p ){
                 win=p;
@@ -110,7 +114,11 @@ class Board {
                 win=p;
             }
         }
+				freeSlots = freeSlots || b[row][col]==0;
 	    }
+		}
+		if (freeSlots==false) {
+			return win ? win:(!freeSlots ? 'Draw': false);
 		}
 	}
 
