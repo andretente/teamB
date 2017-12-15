@@ -48,5 +48,15 @@
     "name": "Mouse",
     "type": "Robot",
     "hiScore": 0
+  },
+  {
+    "name": "",
+    "type": "Human",
+    "hiScore": 0
+  },
+  {
+    "name": "",
+    "type": "Human",
+    "hiScore": 0
   }
 ]
