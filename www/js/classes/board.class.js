@@ -1,80 +1,43 @@
 class Board {
-	constructor(){
-		//super();
-		//this.board = drawBoard();
-		//this.scale = scale();
-    this.board = [
-			[0,0,0,0,0,0,0],
+
+	constructor() {
+		this.board = [ 
+			[0,0,0,0,0,0,0], 
 			[0,0,0,0,0,0,0],
 			[0,0,0,0,0,0,0],
 			[0,0,0,0,0,0,0],
 			[0,0,0,0,0,0,0],
 			[2,0,0,0,0,0,1]
 		];
+
 		this.drawBoard();
 		this.scale();
+		this.addClickEvents();
+		//run every time the size changes
 		$(window).resize(this.scale);
 	}
 
-	addSlot(){
-    let slot = $(this);
-    let row = slot.data('rowid');
-    let col = slot.data('colid');
-    console.log('row', row);
-    console.log('col', col);
-    let playerID = 2; //activePlayer
-
-
-    let quit = false;
-    let iRow = 0;
-      while(iRow < 6 && !quit){
-          let val = this.board[iRow][col];
-          if(val != 0) {
-              quit = true;
-          }
-          else{
-              iRow++;
-          }
-      }
-
-    iRow--;
-    this.board[iRow][col] = playerID;
-    this.drawBoard;
-	}
-
 	drawBoard(){
-
-
 		let html='';
+
 		// for (let row=0; row<7; row++){
 		for (let row=0; row<6; row++){
 			html+= `<div class="board-row">`;
+					
 			for (let col=0; col<7; col++){
+
+				
 				// let val = this.board[row][col];
 				let val = this.board[row][col];
-				if(val == 0){
-					//free slot
-					// html+=`<div class="slot" data-id="row${row},ol${col}">`;
-					html+=`<div class="slot" data-rowid="${row}" data-colid="${col}">`;
-					// html += '';
-				}
-				else if(val == 1){
-					//player1 slot
-					// html+=`<div class="slot player1" data-id="row${row},col${col}">`;
-					html+=`<div class="slot player1" data-rowid="${row}" data-colid="${col}">`;
-					// html += 'X';
-				}
-				else {
-					// player2 slot
-					// html+=`<div class="slot player2" data-id="row${row},col${col}">`;
-					html+=`<div class="slot player2" data-rowid="${row}" data-colid="${col}">`;
-					// html += 'O';
-				}
-				html+='</div>'
+
+				let playerClass = val === 0 ? '' : 'player' + val;
+				html+=`<div class="slot ${playerClass}" data-rowid="${row}" data-colid="${col}"></div>`;
+				
 			}
-			html += '</div>';
+			html += '</div>';	
 		}
 		$('.board').html(html);
+		
 	}
 
 	scale() {
@@ -88,7 +51,7 @@ class Board {
 
 		let wScale = w / orgW;
 		//this scaling would fit to width
-		let hScale = h / orgH;
+		let hScale = h / orgH;	
 		//this scaling would fit both width and height (we need to take the smallest)
 		let scaling = Math.min(wScale, hScale);
 		//apply scaling
@@ -97,6 +60,48 @@ class Board {
 		//set the holder to scaled width and height
 		$('.board-holder').width(orgW * scaling);
 		$('.board-holder').height(orgH * scaling);
-
 	}
+
+	addClickEvents(){
+
+		let board = this.board;
+		let that = this;
+
+		$(document).on('click', '.slot', function(){
+			let slot = $(this);
+			
+			let col = slot.data('colid');
+
+			let playerID = 1; //activePlayer
+			// let i=0;
+
+			let freeSlot;
+
+			for(let row=0; row<6; row++) { 
+				
+				let val = board[row][col];
+				// console.log('VAL',val);
+				if(val == 0){
+					freeSlot = row;
+				}
+			}
+			if(freeSlot != undefined) {
+				board[freeSlot][col] = playerID;
+				that.drawBoard();
+			}
+			
+		});
+	}
+
+
 }
+
+// for (let row = 0; row < 6; row++) {
+// 	for (let col = 0; col < 7; col++){
+// 		for(let p of [1,2]){
+// 			if(row < 3 && b[row][col]==p && b[row1][col]==p && b[row2][col]==p && b[row3][col]==p ){
+// 				win=p;
+// 			}				
+// 		}
+// 	}
+// }
