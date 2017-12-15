@@ -1,10 +1,11 @@
-class HiScore extends Base{
+class HiScore extends Base {
   constructor() {
     super();
-    //this.players = players;
+    this.players = players;
+    this.sortHiScore();
     this.renderHiscore();
   }
-  renderHiscore(){
+  renderHiscore() {
     let co = 1;
     for (let player of players) {
       $('.score-list').append(`
@@ -16,4 +17,15 @@ class HiScore extends Base{
       co++;
     }
   }
+
+
+  // Sort the highscore list
+  sortHiScore() {
+    players.sort((a, b) => a.hiScore - b.hiScore);
+  }
+
 }
+
+
+
+
