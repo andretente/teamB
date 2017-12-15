@@ -5,10 +5,7 @@ constructor() {
 }
 
 
-checkWin(slotIndex){
-  //Horizontal Check Right
-  
-}
+
 
 startGame(){
   // players.push(new Player({
