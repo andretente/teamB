@@ -1,9 +1,9 @@
 class Player extends Base{
-  constructor(name, type, color, score){
+  constructor(name, type, score, color){
     super();
     this.name = name;
     this.type = type;
-    this.color = color;
     this.score = score;
+    this.color = color;
   }
 }

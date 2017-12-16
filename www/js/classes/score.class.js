@@ -1,5 +1,5 @@
-class HiScore extends Base {
-  constructor() {
+class Score extends Base {
+  constructor(players) {
     super();
     this.players = players;
     this.sortHiScore();

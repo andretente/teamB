@@ -1,24 +1,23 @@
 class Game extends Base{
-  constructor() {
+  constructor(name, type, score, color) {
     super();
     this.players = [];
   }
 
   addPlayers(){
-     players.push(new Player({
-      name: $('#playerName1').val(),
-      type: $('#type1').val(),
-      score: 0
-    }));
-
-    players.push(new Player({
-     name: $('#playerName2').val(),
-     type: $('#type2').val(),
-     score: 0
-   }));
-   JSON._save('players.json', players);
-   $('#playerName1').val('');
-   $('#playerName2').val('');
+    players.push(new Player(
+     $('#playerName1').val(),
+     $('#type1').val(),
+     0
+    ));
+    players.push(new Player(
+     $('#playerName2').val(),
+     $('#type2').val(),
+     0
+     ));
+    JSON._save('players.json', players);
+    $('#playerName1').val('');
+    $('#playerName2').val('');
   }
 }
 

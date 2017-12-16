@@ -1,90 +1,32 @@
 [
   {
-    "name": "André",
+    "name": "Andre",
     "type": "Human",
-    "hiScore": 12
-  },
-  {
-    "name": {
-      "name": "",
-      "type": "Human",
-      "score": 0
-    }
-  },
-  {
-    "name": "Tobias",
-    "type": "Human",
-    "hiScore": 8
-  },
-  {
-    "name": "Johan",
-    "type": "Human",
-    "hiScore": 0
-  },
-  {
-    "name": "Anja",
-    "type": "Human",
-    "hiScore": 0
+    "score": 19
   },
   {
     "name": "Aiko",
     "type": "Human",
-    "hiScore": 10
+    "score": 5
   },
   {
-    "name": {
-      "name": "Thomas",
-      "type": "Human",
-      "score": 0
-    }
+    "name": "Tobias ",
+    "type": "Human",
+    "score": 8
   },
   {
-    "name": {
-      "name": "qetq",
-      "type": "Human",
-      "score": 0
-    }
+    "name": "Anja",
+    "type": "Human",
+    "score": 9
   },
   {
-    "name": {
-      "name": "",
-      "type": "Human",
-      "score": 0
-    }
+    "name": "Robot",
+    "type": "Robot",
+    "score": 15
   },
   {
-    "name": {
-      "name": "",
-      "type": "Human",
-      "score": 0
-    }
-  },
-  {
-    "name": {
-      "name": "",
-      "type": "Human",
-      "score": 0
-    }
-  },
-  {
-    "name": {
-      "name": "erqr",
-      "type": "Human",
-      "score": 0
-    }
-  },
-  {
-    "name": {
-      "name": "Anja",
-      "type": "Human",
-      "score": 0
-    }
-  },
-  {
-    "name": {
-      "name": "Magnus",
-      "type": "Robot",
-      "score": 0
-    }
+    "name": "Johan",
+    "type": "Human",
+    "score": 6
   }
 ]
