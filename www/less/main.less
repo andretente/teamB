@@ -3,7 +3,21 @@ main.start-page {
 	div.online {
 		position: absolute;
 		right: 10px;
-		top: 120px;
+		top: 140px;
+
+		@media @mobile-min {
+			top: 230px;
+		}
+		@media @tablet-min {
+			top: 70px;
+		}
+		@media @pc-min {
+			top: 110px;
+		}
+		@media @pc-lg-min {
+			top: 145px;
+		}
+		
 	}
 
 	.card-body {
@@ -13,11 +27,23 @@ main.start-page {
 		@media @pc-min {
 			height: 140px;
 		}
+		@media @tablet-min {
+			height: 210px;
+		}
+		@media @pc-min {
+			height: 170px;
+		}
 	}
 	
-	img.card-img-top {
+	img {
+
+		.card-img-top {
 		height: 170px;
+
+		}
+
+		&#plants {
+				width: 101%;
+		}
 	}
-
-
 }

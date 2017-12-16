@@ -30,7 +30,7 @@ class FrontPage extends Base{
 		                		<div class="btn bg-danger text-white font-weight-bold online">
 		                  			SPELA
 		                		</div>
-		                		<img class="card-img-top" src="/img/plants-3.jpg" alt="The game plants vs zombies">
+		                		<img class="card-img-top" id="plants" src="/img/plants-3.jpg" alt="The game plants vs zombies">
 		              		</a>
 			              	<div class="card-body online-game">
 			                	<h4 class="card-title text-info">Plants vs Zombies</h4>
@@ -41,7 +41,7 @@ class FrontPage extends Base{
 
 			        <div class="col-12 col-md-4 mb-5">
 			            <div class="card">
-			              	<a href="http://www.spelo.se/action/guns-n-glory-heroes">
+			              	<a href="http://www.agame.com/game/bomberpengu">
 			                	<div class="btn bg-danger text-white font-weight-bold online">
 			                  		SPELA
 			                	</div>
@@ -56,7 +56,7 @@ class FrontPage extends Base{
 
 			        <div class="col-12 col-md-4 mb-5">
 			            <div class="card">
-			              	<a href="http://www.spelo.se/action/plants-vs-zombies">
+			              	<a href="http://www.spelo.se/action/guns-n-glory-heroes">
 			                	<div class="btn bg-danger text-white font-weight-bold online">
 			                  		SPELA
 			                	</div>

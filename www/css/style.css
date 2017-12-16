@@ -128,7 +128,27 @@ footer {
 main.start-page div.online {
   position: absolute;
   right: 10px;
-  top: 120px;
+  top: 140px;
+}
+@media screen and (min-width: 576px) {
+  main.start-page div.online {
+    top: 230px;
+  }
+}
+@media screen and (min-width: 768px) {
+  main.start-page div.online {
+    top: 70px;
+  }
+}
+@media screen and (min-width: 992px) {
+  main.start-page div.online {
+    top: 110px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  main.start-page div.online {
+    top: 145px;
+  }
 }
 @media screen and (min-width: 768px) {
   main.start-page .card-body {
@@ -140,8 +160,21 @@ main.start-page div.online {
     height: 140px;
   }
 }
-main.start-page img.card-img-top {
+@media screen and (min-width: 768px) {
+  main.start-page .card-body {
+    height: 210px;
+  }
+}
+@media screen and (min-width: 992px) {
+  main.start-page .card-body {
+    height: 170px;
+  }
+}
+main.start-page img .card-img-top {
   height: 170px;
+}
+main.start-page img#plants {
+  width: 101%;
 }
 header {
   font-family: 'Rancho', cursive;
