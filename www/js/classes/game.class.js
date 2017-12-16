@@ -10,6 +10,7 @@ class Game extends Base{
       type: $('#type1').val(),
       score: 0
     }));
+
     players.push(new Player({
      name: $('#playerName2').val(),
      type: $('#type2').val(),

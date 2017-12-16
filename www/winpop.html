@@ -2,129 +2,111 @@
 <html lang="sv">
 
 
-<head>
-  <title>4 i rad</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <head>
+    <title>4 i rad</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="/css/libs/bootstrap-4-beta.css">
-  <!-- Application specific CSS -->
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" href="/css/main.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Emilys+Candy" rel="stylesheet">
+    <link rel="stylesheet" href="/css/libs/bootstrap-4-beta.css">
+    <!-- Application specific CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/main.css">
 
-</head>
+  </head>
 
-<body>
-  <header>
-    <div class="container-fluid p-0">
-      <div class="row">
-        <nav class="col ml-3 navbar navbar-expand-lg navbar-dark bg-secondary">
-          <h1>4 i rad</h1>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse ml-5" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item active pl-5">
-                <a class="nav-link" href="/">Start
-                  <span class="sr-only">(current)</span>
-                </a>
-              </li>
-              <li class="nav-item pl-5">
-                <a class="nav-link" href="spel.html">Spela</a>
-              </li>
-              <li class="nav-item pl-5">
-                <a class="nav-link" href="rules.html">Spelregler</a>
-              </li>
-              <li class="nav-item pl-5">
-                <a class="nav-link" href="hiscore.html">HiScore</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-    </div>
-  </header>
-
-  <main class="start-page">
-    <h1>VINN POP</h1>
-
-
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-      Launch demo modal
-    </button>
-
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
+  <body>
+    <header>
+      <div class="container-fluid p-0">
+        <div class="row">
+          <nav class="col ml-3 navbar navbar-expand-lg navbar-dark bg-secondary">
+            <h1>4 i rad</h1>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
             </button>
-          </div>
-          <div class="modal-body">
-
-          <h2>Grattis AAA! </h2>
-          <h2>Du vinn</h2>
-            ...
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Spela igen</button>
-          </div>
+            <div class="collapse navbar-collapse ml-5" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item active pl-5">
+                  <a class="nav-link" href="/">Start
+                    <span class="sr-only">(current)</span>
+                  </a>
+                </li>
+                <li class="nav-item pl-5">
+                  <a class="nav-link" href="spel.html">Spela</a>
+                </li>
+                <li class="nav-item pl-5">
+                  <a class="nav-link" href="rules.html">Spelregler</a>
+                </li>
+                <li class="nav-item pl-5">
+                  <a class="nav-link" href="hiscore.html">HiScore</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
         </div>
       </div>
-    </div>
-    
+    </header>
 
-    </article>
-  </main>
-  <footer>
-    <div class="container-fluid bg-secondary">
-      <div class="row col-12">
+    <main class="start-page mt-2 mt-4 ml-5">
+      <section>
+        <h2>VINN POP</h2>
 
-        <div class="col-12 col-md-4 mt-2">
-          <p>Adress:</p>
-          <p>Kungsgatan 88</p>
-          <p>Malmö, Sweden</p>
+        <button type="button" class="btn btn-primary mt-2 mt-5" data-toggle="modal" data-target="#exampleModal">
+          Du vinn !
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h2 class="modal-title " id="exampleModalLabel">GRATTIS ANNA!</h2>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+              <h2 class="vinn">Du vann!<span>&#x1F44D</span></h2>
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Spela igen</button>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div class="col-12 col-md-4 mt-2">
-          <p>http://www.fourinalinegame.se</p>
-          <p>email: info@fourinalinegame.se</p>
-          <p>email: anja@fourinalinegame.se</p>
-        </div>
 
-        <div class="col-12 col-md-4 mt-2">
-          <p>Kontakt: Anna Karlsson</p>
-          <p>Telefon: +46(0)123456789</p>
-          <p>Mobil: +46(0)123456789</p>
-        </div>
+    </main>
+    <footer>
+      <div class="container-fluid">
+      <div class="footer-content">
 
+        </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
 
-  <!-- JavaScript libraries -->
-  <script src="/jsonflex.js"></script>
-  <script src="/js/libs/jquery-3.2.1.js"></script>
-  <script src="/js/libs/popper-1.11.0.js"></script>
-  <script src="/js/libs/bootstrap-4-beta.js"></script>
-  <!-- Application specific JavaScript -->
-  <!-- Application specific JavaScript -->
-  <script src="/js/classes/base.class.js"></script>
-  <script src="/js/classes/rulespage.class.js"></script>
-  <script src="/js/classes/frontpage.class.js"></script>
-  <script src="/js/classes/player.class.js"></script>
-  <script src="/js/classes/game.class.js"></script>
-  <script src="/js/classes/hiscore.class.js"></script>
-  <script src="/js/classes/app.class.js"></script>
-  <script src="/js/main.js"></script>
-</body>
+    <!-- JavaScript libraries -->
+    <script src="/jsonflex.js"></script>
+    <script src="/js/libs/jquery-3.2.1.js"></script>
+    <script src="/js/libs/popper-1.11.0.js"></script>
+    <script src="/js/libs/bootstrap-4-beta.js"></script>
+    <!-- Application specific JavaScript -->
+    <!-- Application specific JavaScript -->
+    <script src="/js/classes/base.class.js"></script>
+    <script src="/js/classes/frontpage.class.js"></script>
+    <script src="/js/classes/footer.class.js"></script>
+    <script src="/js/classes/rulespage.class.js"></script>
+    <script src="/js/classes/player.class.js"></script>
+    <script src="/js/classes/game.class.js"></script>
+    <script src="/js/classes/board.class.js"></script>
+    <script src="/js/classes/hiscore.class.js"></script>
+    <script src="/js/classes/app.class.js"></script>
+    <script src="/js/main.js"></script>
+  </body>
 
 </html>

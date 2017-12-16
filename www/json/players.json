@@ -6,7 +6,7 @@
   },
   {
     "name": {
-      "name": "Thomas",
+      "name": "",
       "type": "Human",
       "score": 0
     }
@@ -33,7 +33,7 @@
   },
   {
     "name": {
-      "name": "erqr",
+      "name": "Thomas",
       "type": "Human",
       "score": 0
     }
@@ -42,6 +42,48 @@
     "name": {
       "name": "qetq",
       "type": "Human",
+      "score": 0
+    }
+  },
+  {
+    "name": {
+      "name": "",
+      "type": "Human",
+      "score": 0
+    }
+  },
+  {
+    "name": {
+      "name": "",
+      "type": "Human",
+      "score": 0
+    }
+  },
+  {
+    "name": {
+      "name": "",
+      "type": "Human",
+      "score": 0
+    }
+  },
+  {
+    "name": {
+      "name": "erqr",
+      "type": "Human",
+      "score": 0
+    }
+  },
+  {
+    "name": {
+      "name": "Anja",
+      "type": "Human",
+      "score": 0
+    }
+  },
+  {
+    "name": {
+      "name": "Magnus",
+      "type": "Robot",
       "score": 0
     }
   }
