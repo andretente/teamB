@@ -55,18 +55,31 @@ class Game extends Base{
   //Method that handles all the click events in the game
   clickEvents(){
     let that = this;
-    let currentPlayer = 'Player 1';
-    $('.playerTurn').text(currentPlayer + ' make a move!');
     //Event Handle to add players
     $(document).on("click", '#btn-addPlayers', function() {
       that.addPlayers();
     });
+    //Changes player and counts score
+    this.turn();
+  }
 
+  turn(){
+    let currentPlayer = 'Player 1';
+    $('.playerTurn').text(currentPlayer + ' make a move!');
+    let scorePlayer1 = 0;
+    let scorePlayer2 = 0;
     $(document).on("click", '.board', function() {
-      currentPlayer = (currentPlayer == 'Player 1') ? ('Player 2'):('Player 1');
+      if (currentPlayer == 'Player 1') {
+        currentPlayer = 'Player 2';
+        scorePlayer1++;
+      }
+      else{
+        currentPlayer = 'Player 1'
+        scorePlayer2++;
+      }
+      console.log('Player 1: ' + scorePlayer1);
       $('.playerTurn').text(currentPlayer + ' make a move!');
     });
-
   }
 }
 

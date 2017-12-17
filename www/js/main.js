@@ -1,7 +1,7 @@
 let frontPage = new FrontPage();
 let rulesPage = new RulesPage();
-let game = new Game();
 let myBoard = new Board();
+let game = new Game();
 let myFooter = new Footer();
 
 frontPage;

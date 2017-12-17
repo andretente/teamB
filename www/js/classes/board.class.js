@@ -105,7 +105,6 @@ class Board {
 				freeSlots = freeSlots || b[row][col]==0;
 	    }
 		}
-		console.log(win ? win:'Continue playing');
 		return win ? win:(!freeSlots ? 'Draw': false);
 	}
 }
