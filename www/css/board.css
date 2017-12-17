@@ -37,3 +37,14 @@
 	background-image: url(/img/player2.svg);
 }
 
+.cancel-button {
+	width:660px;
+	margin: 20px auto;
+	background-color: #e64b3d;
+	border-color: solid 1px #e64b3d;
+	font-size: 20px;
+}
+
+.cancel-modal {
+	font-size: 20px;
+}
