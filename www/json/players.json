@@ -1,13 +1,13 @@
 [
   {
-    "name": "Andre",
-    "type": "Human",
-    "score": 19
-  },
-  {
     "name": "Aiko",
     "type": "Human",
     "score": 5
+  },
+  {
+    "name": "Johan",
+    "type": "Human",
+    "score": 6
   },
   {
     "name": "Tobias ",
@@ -25,8 +25,18 @@
     "score": 15
   },
   {
-    "name": "Johan",
+    "name": "Andre",
     "type": "Human",
-    "score": 6
+    "score": 19
+  },
+  {
+    "name": "",
+    "type": "Human",
+    "score": 0
+  },
+  {
+    "name": "",
+    "type": "Human",
+    "score": 0
   }
 ]
