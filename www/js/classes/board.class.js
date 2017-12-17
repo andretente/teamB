@@ -8,7 +8,7 @@ class Board {
 			[0,0,0,0,0,0,0],
 			[0,0,0,0,0,0,0],
 			[0,0,0,0,0,0,0],
-			[2,0,0,0,0,0,1]
+			[2,0,0,0,0,0,2]
 		];
 
 		this.drawBoard();
@@ -71,16 +71,11 @@ class Board {
 
 		$(document).on('click', '.slot', function(){
 			let slot = $(this);
-
 			let col = slot.data('colid');
-
 			let playerID = 1; //activePlayer
 			// let i=0;
-
 			let freeSlot;
-
 			for(let row=0; row<6; row++) {
-
 				let val = board[row][col];
 				// console.log('VAL',val);
 				if(val == 0){
@@ -96,32 +91,33 @@ class Board {
 	}
 
 	checkWin(){
-    let b = this.board;
-    let win;
-    let freeSlots = false;
-    //Vertical Check
-    for (let row = 0; row < 6; row++) {
-      for (let col = 0; col < 7; col++){
+		let b = this.board;
+		let win;
+		let freeSlots = false;
+	  //Vertical Check
+		for (let row = 0; row < 6; row++) {
+	    for (let col = 0; col < 7; col++){
         for(let p of [1,2]){
             if(row < 3 && b[row][col]==p && b[row+1][col]==p && b[row+2][col]==p && b[row+3][col]==p ){
                 win=p;
-                console.log('Player '+ p + ' wins vertically');
+								//console.log('Player '+ p + ' wins vertically');
             }
             else if(col < 4 && b[row][col]==p && b[row][col+1]==p && b[row][col+2]==p && b[row][col+3]==p ){
                 win=p;
-                console.log('Player '+ p + ' wins horizontally');
+								//console.log('Player '+ p + ' wins horizontally');
             }
             else if(row < 3 && b[row][col]==p && b[row+1][col+1]==p && b[row+2][col+2]==p && b[row+3][col+3]==p ){
                 win=p;
-                console.log('Player '+ p + ' wins diagonally 1');
+                //console.log('Player '+ p + ' wins diagonally 1');
             }
             else if(row < 3 && b[row][col]==p && b[row+1][col-1]==p && b[row+2][col-2]==p && b[row+3][col-3]==p ){
                 win=p;
-                console.log('Player '+ p + ' wins diagonally 2');
+                //console.log('Player '+ p + ' wins diagonally 2');
+
             }
         }
-			  freeSlots = freeSlots || b[row][col]==0;
-			}
+				freeSlots = freeSlots || b[row][col]==0;
+	    }
 		}
 		console.log(win ? win:(!freeSlots ? 'Draw': false));
 		return win ? win:(!freeSlots ? 'Draw': false);

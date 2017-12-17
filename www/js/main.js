@@ -16,7 +16,3 @@ JSON._load('players.json')
    players = data;
    new Score();
 });
-
-$(document).on("click", '#btn-addPlayers', function() {
-  game.addPlayers();
-});

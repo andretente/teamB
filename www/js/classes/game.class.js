@@ -1,24 +1,56 @@
 class Game extends Base{
-  constructor(name, type, score, color) {
+  constructor() {
     super();
     this.players = [];
+    //this.currentPlayer = {};
+    this.clickEvents();
   }
-
   addPlayers(){
-    players.push(new Player(
-     $('#playerName1').val(),
-     $('#type1').val(),
-     0
-    ));
-    players.push(new Player(
-     $('#playerName2').val(),
-     $('#type2').val(),
-     0
-     ));
+    this.player1 = new Player(
+      $('#playerName1').val(),
+      $('#type1').val(),
+      0,
+      'Red'
+    );
+    this.player2 = new Player(
+      $('#playerName2').val(),
+      $('#type2').val(),
+      0,
+      'Blue'
+    );
+    //console.log(this.currentPlayer);
+    // players.push({
+    //   name: this.player1.name,
+    //   type: this.player1.type,
+    //   score: this.player1.score
+    // });
+    // players.push({
+    //   name: this.player2.name,
+    //   type: this.player2.type,
+    //   score: this.player2.score
+    // });
     JSON._save('players.json', players);
     $('#playerName1').val('');
     $('#playerName2').val('');
   }
+
+  clickEvents(){
+    let that = this;
+    let currentPlayer = 'Player 1';
+    //Event Handle to add players
+    $(document).on("click", '#btn-addPlayers', function() {
+      that.addPlayers();
+    });
+
+
+
+    $(document).on("click", '#btn-changePlayers', function() {
+      currentPlayer = (currentPlayer == 'Player 1') ? ('Player 2'):('Player 1');
+      console.log(currentPlayer);
+    });
+
+  }
+
 }
 
 
