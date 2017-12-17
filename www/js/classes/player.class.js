@@ -6,4 +6,5 @@ class Player extends Base{
     this.score = score;
     this.color = color;
   }
+
 }
