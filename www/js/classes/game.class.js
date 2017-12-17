@@ -56,18 +56,18 @@ class Game extends Base{
   clickEvents(){
     let that = this;
     let currentPlayer = 'Player 1';
+    $('.playerTurn').text(currentPlayer + ' make a move!');
     //Event Handle to add players
     $(document).on("click", '#btn-addPlayers', function() {
       that.addPlayers();
     });
-    
-    $(document).on("click", '#btn-changePlayers', function() {
+
+    $(document).on("click", '.board', function() {
       currentPlayer = (currentPlayer == 'Player 1') ? ('Player 2'):('Player 1');
-      console.log(currentPlayer);
+      $('.playerTurn').text(currentPlayer + ' make a move!');
     });
 
   }
-
 }
 
 

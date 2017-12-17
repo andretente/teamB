@@ -17,8 +17,6 @@ class Score extends Base {
       co++;
     }
   }
-
-
   // Sort the highscore list
   sortHiScore() {
     players.sort((a, b) => a.score - b.score);
