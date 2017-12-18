@@ -8,6 +8,7 @@ class Board {
 			[0, 0, 0, 0, 0, 0, 0],
 			[0, 0, 0, 0, 0, 0, 0]
 		];
+		this.currentPlayer = 1;　//set default player to 1
 		this.drawBoard();
 		this.scale();
 		this.addClickEvents();
@@ -67,12 +68,14 @@ class Board {
 	addClickEvents() {
 		let board = this.board;
 		let that = this;
-		let check = this;
+		//let check = this;
 		$(document).on('click', '.slot', function () {
 			let slot = $(this);
 			let col = slot.data('colid');
-			let playerID = game.currentPlayer; //activePlayer
-		//	console.log('game.Currentplayer:' + game.currentPlayer);
+			let playerID = that.currentPlayer; //activePlayer
+			// console.log('playerID:' + playerID);
+
+			//	console.log('game.Currentplayer:' + game.currentPlayer);
 			// let i=0;
 
 			let freeSlot;
@@ -85,16 +88,17 @@ class Board {
 			}
 			if (freeSlot != undefined) {
 				board[freeSlot][col] = playerID;
-				that.drawBoard();
+				that.drawBoard(); // that normally
 			}
-			if (game.currentPlayer == 1) {
-				game.currentPlayer = 2;
+			if (that.currentPlayer == 1) {
+				that.currentPlayer = 2;
 			} 
 			else {
-				game.currentPlayer = 1;
+				that.currentPlayer = 1;
 			}
 
-			check.checkWin();
+			//check.checkWin();
+		that.checkWin(); 
 		});
 	}
 
