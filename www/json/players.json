@@ -8,5 +8,25 @@
     "name": " Anna",
     "type": "Human",
     "score": 0
+  },
+  {
+    "name": "Otto",
+    "type": "Human",
+    "score": 0
+  },
+  {
+    "name": "Olof",
+    "type": "Human",
+    "score": 0
+  },
+  {
+    "name": "",
+    "type": "Human",
+    "score": 0
+  },
+  {
+    "name": "",
+    "type": "Human",
+    "score": 0
   }
 ]
