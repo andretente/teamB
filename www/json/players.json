@@ -2,40 +2,10 @@
   {
     "name": "Aiko",
     "type": "Human",
-    "score": 5
-  },
-  {
-    "name": "Johan",
-    "type": "Human",
-    "score": 6
-  },
-  {
-    "name": "Tobias ",
-    "type": "Human",
-    "score": 8
-  },
-  {
-    "name": "Anja",
-    "type": "Human",
-    "score": 9
-  },
-  {
-    "name": "Robot",
-    "type": "Robot",
-    "score": 15
-  },
-  {
-    "name": "Andre",
-    "type": "Human",
-    "score": 19
-  },
-  {
-    "name": "",
-    "type": "Human",
     "score": 0
   },
   {
-    "name": "",
+    "name": " Anna",
     "type": "Human",
     "score": 0
   }

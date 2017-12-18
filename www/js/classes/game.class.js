@@ -2,6 +2,7 @@ class Game extends Base{
   constructor() {
     super();
     this.players = [];
+    this.currentPlayer = 1;
     this.clickEvents();
   }
   // Create an object with the new player
@@ -71,13 +72,15 @@ class Game extends Base{
     $(document).on("click", '.board', function() {
       if (currentPlayer == 'Player 1') {
         currentPlayer = 'Player 2';
+        this.currentPlayer = 2;
         scorePlayer1++;
       }
       else{
-        currentPlayer = 'Player 1'
+        currentPlayer = 'Player 1';
+        this.currentPlayer = 1;
         scorePlayer2++;
       }
-      console.log('Player 1: ' + scorePlayer1);
+      //console.log('Player 1: ' + scorePlayer1);
       $('.playerTurn').text(currentPlayer + ' make a move!');
     });
   }
