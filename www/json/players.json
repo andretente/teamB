@@ -33,24 +33,5 @@
     "name": "Otto",
     "type": "Human",
     "score": 0
-  },
-  {
-    "name": "Olof",
-    "type": "Human",
-<<<<<<< Updated upstream
-    "score": 0
-  },
-  {
-    "name": "",
-    "type": "Human",
-    "score": 0
-  },
-  {
-    "name": "",
-    "type": "Human",
-    "score": 0
-=======
-    "score": 19
->>>>>>> Stashed changes
   }
 ]
