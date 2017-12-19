@@ -80,9 +80,11 @@ class Game extends Base{
         this.currentPlayer = 1;
         scorePlayer2++;
       }
-      //console.log('Player 1: ' + scorePlayer1);
+      console.log('Player 1: ' + scorePlayer1);
+      console.log('Player 2: ' + scorePlayer2);
       $('.playerTurn').text(currentPlayer + ' make a move!');
     });
+
   }
 }
 
