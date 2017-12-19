@@ -1,6 +1,6 @@
 [
   {
-    "name": "Andre",
+    "name": " Anna",
     "type": "Human",
     "score": 0
   },
@@ -10,7 +10,7 @@
     "score": 6
   },
   {
-    "name": " Anna",
+    "name": "",
     "type": "Human",
     "score": 10
   },
@@ -27,6 +27,16 @@
   {
     "name": "qrg",
     "type": "Human",
+    "score": 0
+  },
+  {
+    "name": "test1",
+    "type": "Human",
+    "score": 0
+  },
+  {
+    "name": "test2",
+    "type": "Robot",
     "score": 0
   }
 ]
