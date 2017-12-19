@@ -38,13 +38,15 @@
 }
 
 .cancel-button {
-	width:300px;
 	margin: 20px auto;
+	width: 300px;
 	background-color: #e64b3d;
 	border-color: solid 1px #e64b3d;
 	font-size: 20px;
-}
+	}
+
 
 .cancel-modal {
 	font-size: 20px;
+
 }
