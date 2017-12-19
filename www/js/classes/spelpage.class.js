@@ -24,7 +24,7 @@ class SpelPage extends Base{
 	              </div>
 	            </div>
 	          </div>
-	          
+
 	          <div class="row mt-4">
 	            <h3 class="col-12 col-md-8 col-lg-8 mx-auto">Spelare 2</h3>
 	          </div>
@@ -46,7 +46,7 @@ class SpelPage extends Base{
 
 	          <div class="row mt-4">
 	            <div class="col-12 col-md-8 col-lg-8 mx-auto">
-	              <a href="board.html" class="btn btn-primary float-left" id="btn-addPlayers">Starta</a>
+	              <a href="#" class="btn btn-primary float-left" id="btn-addPlayers" data-toggle="popover" data-trigger="focus" data-content="You need to use valid names!">Starta</a>
 	            </div>
 	          </div>
 			</div>

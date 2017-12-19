@@ -4,6 +4,7 @@ class Game extends Base{
     this.players = [];
     this.currentPlayer = 1;
     this.clickEvents();
+    this.board = new Board();
   }
   // Create an object with the new player
   addPlayers(){
@@ -30,28 +31,35 @@ class Game extends Base{
     for (let player of players) {
       names.push(player.name);
     }
-    if (names.includes(playerName1)) {
-      console.log('Player 1 is a returning player');
+    if (playerName1 === '' || playerName2 === '') {
+      $('#btn-addPlayers').popover('show');
     }
     else{
-      players.push({
-        name: this.player1.name,
-        type: this.player1.type,
-        score: this.player1.score
-      });
+      if (names.includes(playerName1)) {
+        console.log('Player 1 is a returning player');
+      }
+      else{
+        players.push({
+          name: this.player1.name,
+          type: this.player1.type,
+          score: this.player1.score
+        });
+      }
+      if (names.includes(playerName2)) {
+        console.log('Player 2 is a returning player');
+      }
+      else{
+        players.push({
+          name: this.player2.name,
+          type: this.player2.type,
+          score: this.player2.score
+        });
+      }
+      JSON._save('players.json', players);
+      $('#btn-addPlayers').attr('href','board.html');
+      $('#btn-addPlayers').popover('hide');
     }
-    if (names.includes(playerName2)) {
-      console.log('Player 2 is a returning player');
-    }
-    else{
-      players.push({
-        name: this.player2.name,
-        type: this.player2.type,
-        score: this.player2.score
-      });
-    }
-    console.log('check just ran');
-    JSON._save('players.json', players);
+
   }
   //Method that handles all the click events in the game
   clickEvents(){
@@ -69,19 +77,31 @@ class Game extends Base{
     $('.playerTurn').text(currentPlayer + ' make a move!');
     let scorePlayer1 = 0;
     let scorePlayer2 = 0;
+    let that = this;
     $(document).on("click", '.board', function() {
-      if (currentPlayer == 'Player 1') {
-        currentPlayer = 'Player 2';
-        this.currentPlayer = 2;
-        scorePlayer1++;
+      console.log(that.board.checkWin());
+      if (that.board.checkWin() == false)  {
+        if (currentPlayer == 'Player 1') {
+          currentPlayer = 'Player 2';
+          this.currentPlayer = 2;
+          scorePlayer1++;
+        }
+        else{
+          currentPlayer = 'Player 1';
+          this.currentPlayer = 1;
+          scorePlayer2++;
+        }
       }
-      else{
-        currentPlayer = 'Player 1';
-        this.currentPlayer = 1;
-        scorePlayer2++;
+      else if(that.board.checkWin() == 1){
+        console.log('Player 1 won! Score: ' + (scorePlayer1 + 1));
       }
-      console.log('Player 1: ' + scorePlayer1);
-      console.log('Player 2: ' + scorePlayer2);
+      else if(that.board.checkWin() == 2){
+        console.log('Player 2 won! Score: ' + (scorePlayer2 + 1));
+      }
+
+      //console.log('Player 1: ' + scorePlayer1);
+      //console.log('Player 2: ' + scorePlayer2);
+
       $('.playerTurn').text(currentPlayer + ' make a move!');
     });
 
