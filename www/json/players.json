@@ -18,5 +18,15 @@
     "name": "Otto",
     "type": "Human",
     "score": 12
+  },
+  {
+    "name": "qerg",
+    "type": "Human",
+    "score": 0
+  },
+  {
+    "name": "qrg",
+    "type": "Human",
+    "score": 0
   }
 ]
