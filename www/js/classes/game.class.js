@@ -30,28 +30,35 @@ class Game extends Base{
     for (let player of players) {
       names.push(player.name);
     }
-    if (names.includes(playerName1)) {
-      console.log('Player 1 is a returning player');
+    if (playerName1 === '' || playerName2 === '') {
+      $('#btn-addPlayers').popover('show');
     }
     else{
-      players.push({
-        name: this.player1.name,
-        type: this.player1.type,
-        score: this.player1.score
-      });
+      if (names.includes(playerName1)) {
+        console.log('Player 1 is a returning player');
+      }
+      else{
+        players.push({
+          name: this.player1.name,
+          type: this.player1.type,
+          score: this.player1.score
+        });
+      }
+      if (names.includes(playerName2)) {
+        console.log('Player 2 is a returning player');
+      }
+      else{
+        players.push({
+          name: this.player2.name,
+          type: this.player2.type,
+          score: this.player2.score
+        });
+      }
+      JSON._save('players.json', players);
+      $('#btn-addPlayers').attr('href','board.html');
+      $('#btn-addPlayers').popover('hide');
     }
-    if (names.includes(playerName2)) {
-      console.log('Player 2 is a returning player');
-    }
-    else{
-      players.push({
-        name: this.player2.name,
-        type: this.player2.type,
-        score: this.player2.score
-      });
-    }
-    console.log('check just ran');
-    JSON._save('players.json', players);
+
   }
   //Method that handles all the click events in the game
   clickEvents(){
