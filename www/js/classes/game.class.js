@@ -30,6 +30,7 @@ class Game extends Base{
     for (let player of players) {
       names.push(player.name);
     }
+
     if (playerName1 === '' || playerName2 === '') {
       $('#btn-addPlayers').popover('show');
     }
@@ -58,6 +59,7 @@ class Game extends Base{
       $('#btn-addPlayers').attr('href','board.html');
       $('#btn-addPlayers').popover('hide');
     }
+
 
   }
   //Method that handles all the click events in the game
