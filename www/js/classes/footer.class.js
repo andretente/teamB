@@ -18,9 +18,9 @@ renderFooter(){
       </div>
 
       <div class="col-12 col-md-4 mt-2">
-        <p class="m-0">www.fourinalinegame.se</p>
-        <p class="m-0">info@fourinalinegame.se</p>
-        <p class="m-0">anja@fourinalinegame.se</p>
+        <p class="m-0">http://www.fourinalinegame.se</p>
+        <p class="m-0">email: info@fourinalinegame.se</p>
+        <p class="m-0">email: anja@fourinalinegame.se</p>
       </div>
 
       <div class="col-12 col-md-4 mt-2">
