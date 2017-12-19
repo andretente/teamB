@@ -4,7 +4,6 @@ class Game extends Base{
     this.players = [];
     this.currentPlayer = 1;
     this.clickEvents();
-    this.board = new Board();
   }
   // Create an object with the new player
   addPlayers(){
@@ -79,31 +78,19 @@ class Game extends Base{
     $('.playerTurn').text(currentPlayer + ' make a move!');
     let scorePlayer1 = 0;
     let scorePlayer2 = 0;
-    let that = this;
     $(document).on("click", '.board', function() {
-      console.log(that.board.checkWin());
-      if (that.board.checkWin() == false)  {
-        if (currentPlayer == 'Player 1') {
-          currentPlayer = 'Player 2';
-          this.currentPlayer = 2;
-          scorePlayer1++;
-        }
-        else{
-          currentPlayer = 'Player 1';
-          this.currentPlayer = 1;
-          scorePlayer2++;
-        }
+      if (currentPlayer == 'Player 1') {
+        currentPlayer = 'Player 2';
+        this.currentPlayer = 2;
+        scorePlayer1++;
       }
-      else if(that.board.checkWin() == 1){
-        console.log('Player 1 won! Score: ' + (scorePlayer1 + 1));
+      else{
+        currentPlayer = 'Player 1';
+        this.currentPlayer = 1;
+        scorePlayer2++;
       }
-      else if(that.board.checkWin() == 2){
-        console.log('Player 2 won! Score: ' + (scorePlayer2 + 1));
-      }
-
-      //console.log('Player 1: ' + scorePlayer1);
-      //console.log('Player 2: ' + scorePlayer2);
-
+      console.log('Player 1: ' + scorePlayer1);
+      console.log('Player 2: ' + scorePlayer2);
       $('.playerTurn').text(currentPlayer + ' make a move!');
     });
 
