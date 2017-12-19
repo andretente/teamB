@@ -1,9 +1,25 @@
 class Game extends Base{
   constructor() {
     super();
+    JSON._classes(Player);
     this.players = [];
+    this.currentPlayers = [];
     this.currentPlayer = 1;
     this.clickEvents();
+    new Board(this);
+    if(!localStorage.gameData && location.pathname == '/board.html'){
+      // We have no players so we can' start the game
+      // go back to the form
+      location.replace('/spel.html');
+    }
+    // Will only run when starting a game
+    // after asking for names
+    if(localStorage.gameData){
+      let data = JSON._parse(localStorage.gameData);
+      this.player1 = data.player1;
+      this.player2 = data.player2;
+      delete localStorage.gameData;
+    }
   }
   // Create an object with the new player
   addPlayers(){
@@ -20,7 +36,15 @@ class Game extends Base{
       0,
       'Blue'
     );
-    run.checkPlayer(this.player1.name, this.player2.name)
+    run.checkPlayer(this.player1.name, this.player2.name);
+
+    // Save to local storage
+    localStorage.gameData = JSON._stringify({
+      player1: this.player1,
+      player2: this.player2
+    });
+    location.replace('/board.html');
+
     $('#playerName1').val('');
     $('#playerName2').val('');
   }
@@ -55,9 +79,10 @@ class Game extends Base{
           score: this.player2.score
         });
       }
-      JSON._save('players.json', players);
-      $('#btn-addPlayers').attr('href','board.html');
+
       $('#btn-addPlayers').popover('hide');
+      JSON._save('players.json', players);
+
     }
 
 
@@ -95,7 +120,7 @@ class Game extends Base{
     });
 
   }
-  
+
 
 }
 
