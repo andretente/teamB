@@ -1,5 +1,5 @@
 class Board {
-	constructor() {
+	constructor(game) {
 		this.board = [
 			[0, 0, 0, 0, 0, 0, 0],
 			[0, 0, 0, 0, 0, 0, 0],
@@ -12,6 +12,7 @@ class Board {
 		this.drawBoard();
 		this.scale();
 		this.addClickEvents();
+		this.game = game;
 		//run every time the size changes
 		$(window).resize(this.scale);
 	}
@@ -130,6 +131,12 @@ class Board {
 				freeSlots = freeSlots || b[row][col] == 0;
 			}
 		}
-		return win ? win : (!freeSlots ? 'Draw' : false);
+		if(win){
+			new Winpop(win == 1 ? this.game.player1 : this.game.player2);
+		}
+		else if(!freeSlots){
+			new Winpop(this.game.player1, this.game.player2);
+		}
+		//return win ? win : (!freeSlots ? 'Draw' : false);
 	}
 }
