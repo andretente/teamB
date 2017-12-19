@@ -15,6 +15,16 @@
     "score": 0
   },
   {
+    "name": "1",
+    "type": "Human",
+    "score": 0
+  },
+  {
+    "name": "2",
+    "type": "Human",
+    "score": 0
+  },
+  {
     "name": "Aiko",
     "type": "Human",
     "score": 6
@@ -28,10 +38,5 @@
     "name": "Otto",
     "type": "Human",
     "score": 12
-  },
-  {
-    "name": "Anja",
-    "type": "Human",
-    "score": 0
   }
 ]
