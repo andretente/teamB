@@ -23,7 +23,7 @@ class RulesPage extends Base{
 				<div class="row">
 					<div class="col-12 col-md-4 mb-5">
 						<div class="card border-blue">
-							<img class="card-img-top img-fluid" src="/img/rules/rules-3.jpg" alt="Card image cap">
+							<img class="card-img-top img-fluid" src="/img/rules/rules1.svg" alt="Card image cap">
 							<div class="card-body">
 								<h4 class="card-title font-weight-bold text-center mb-4">Välj motståndare</h4>
 								<ul>
@@ -38,7 +38,7 @@ class RulesPage extends Base{
 
 					<div class="col-12 col-md-4 mb-5">
 						<div class="card border-blue">
-							<img class="card-img-top img-fluid" src="/img/rules/rules-2.png" alt="Card image cap">
+							<img class="card-img-top img-fluid" src="/img/rules/rules2.svg" alt="Card image cap">
 							<div class="card-body">
 								<h4 class="card-title font-weight-bold text-center mb-4">Klicka en kolumn eller plats</h4>
 								<ul>
@@ -51,7 +51,7 @@ class RulesPage extends Base{
 
 					<div class="col-12 col-md-4 mb-5">
 						<div class="card border-blue">
-							<img class="card-img-top img-fluid" src="/img/rules/rules-7.png" alt="Card image cap">
+							<img class="card-img-top img-fluid" src="/img/rules/rules3.svg" alt="Card image cap">
 							<div class="card-body">
 								<h4 class="card-title font-weight-bold text-center mb-4">Kolla alla riktningar</h4>
 								<ul>
