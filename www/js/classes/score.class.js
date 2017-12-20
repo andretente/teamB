@@ -9,10 +9,22 @@ class Score extends Base {
     let co = 1;
     for (let player of players) {
       $('.score-list').append(`
-        <li class="list-group-item d-flex justify-content-between align-items-center mt-2">
-          ${co}) ${player.name}
-          <span class="badge badge-primary badge-pill">${player.score}</span>
-        </li>
+        <article class="mt-2">
+          <section class="container">
+            <div class="score">
+              <div class="row">
+                <div class="col-8 mx-auto">
+                  <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      ${co}) ${player.name}
+                      <span class="badge bg-blue badge-pill">${player.score}</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            </section>
+          </article>
       `);
       co++;
     }

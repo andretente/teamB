@@ -1,49 +1,94 @@
-main.start-page {
+html, body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+header{
+	min-height: 60px;
+  border-bottom: 1px solid @red;
+}
+nav{
+  height: 100%;
+  position: absolute !important;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.img-brand{
+  width: 40px;
+}
+main{
+	padding-top: 80px;
+}
+.content {
+  flex: 1 0 auto;
+}
 
-	div.online {
-		position: absolute;
-		right: 10px;
-		top: 140px;
-
-		@media @mobile-min {
-			top: 230px;
-		}
-		@media @tablet-min {
-			top: 70px;
-		}
-		@media @pc-min {
-			top: 110px;
-		}
-		@media @pc-lg-min {
-			top: 145px;
-		}
-		
-	}
-
-	.card-body {
-		@media @tablet-min {
-		height: 200px;
-		}
-		@media @pc-min {
-			height: 140px;
-		}
-		@media @tablet-min {
-			height: 210px;
-		}
-		@media @pc-min {
-			height: 170px;
-		}
-	}
-	
-	img {
-
-		.card-img-top {
-		height: 170px;
-
-		}
-
-		&#plants {
-				width: 101%;
-		}
-	}
+.bg-light-grey{
+  background-color: @light-grey;
+}
+.text-light-grey{
+  color: @light-grey;
+}
+.bg-red{
+  background-color: @red;
+}
+.text-red{
+  color: @red;
+}
+.text-light-grey{
+  color: @light-grey;
+}
+.bg-blue{
+  background-color: @blue;
+}
+.text-blue{
+  color: @blue;
+}
+.btn-red-nav{
+  background-color: @red;
+  color: @light-grey;
+  border-radius: 0;
+}
+.btn-red-nav:hover{
+  background-color: @red;
+  color: @light-grey;
+  border-bottom: 1px solid @light-grey;
+  cursor: pointer;
+}
+.btn-red-nav.active{
+  background-color: @red;
+  color: @blue;
+}
+.btn-red{
+  background-color: @red;
+  color: @light-grey;
+  border-radius: 0;
+}
+.btn-red:hover{
+  background-color: @blue;
+  color: @light-grey;
+  border-bottom: 1px solid @light-grey;
+  cursor: pointer;
+}
+.btn-red.active{
+  background-color: @red;
+  color: @blue;
+}
+.btn-white{
+  background-color: @white;
+  color: @red;
+}
+.btn-white:hover{
+  background-color: @white;
+  color: @red;
+  border-bottom: 1px solid @red;
+}
+.btn-white.active{
+  background-color: @red;
+  color: @white;
+}
+.border-blue{
+  border: 1px solid @blue;
 }
