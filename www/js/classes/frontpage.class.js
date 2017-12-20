@@ -9,7 +9,7 @@ class FrontPage extends Base{
 		$('.frontpagecontent').append(`
 			<div>
 		        <div class="row">
-		          	<div class="jumbotron col-sm-12 col-lg-6 mt-5">
+		          	<div class="jumbotron col-6 mt-5">
 		            	<h1 class="display-3">Välkommen!</h1>
 		            	<hr class="my-4">
 		            	<p>Spela det klassiska spelet 4 i rad online!</p>
@@ -17,7 +17,7 @@ class FrontPage extends Base{
 		              		<a class="btn btn-light mt-4 float-right btn-lg" href="spel.html" role="button">Spela!</a>
 		            	</p>
 		          	</div>
-		          	<div class=" col-sm-12 col-lg-6">
+		          	<div class="col-6">
 		            	<div class="fyrairadimg mt-5">
 		              		<img class="w-75 img-fluid" src="/img/fyrairad.png">
 		            	</div>
