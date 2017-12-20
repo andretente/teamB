@@ -8,25 +8,22 @@ class Footer extends Base{
 
 
 renderFooter(){
-  $('.footer-content').append(`
-    <div class="row col-12">
-
-      <div class="col-12 col-md-4 mt-2">
-        <p class="m-0">Adress:</p>
-        <p class="m-0">Kungsgatan 88</p>
-        <p class="m-0">Malmö, Sweden</p>
-      </div>
-
-      <div class="col-12 col-md-4 mt-2">
-        <p class="m-0">http://www.fourinalinegame.se</p>
-        <p class="m-0">email: info@fourinalinegame.se</p>
-        <p class="m-0">email: anja@fourinalinegame.se</p>
-      </div>
-
-      <div class="col-12 col-md-4 mt-2">
-        <p class="m-0">Kontakt: Anna Karlsson</p>
-        <p class="m-0">Telefon: +46(0)123456789</p>
-        <p class="m-0">Mobil: +46(0)123456789</p>
+  $('footer').append(`
+    <div class="container-fluid">
+      <div class="row col-12 py-2">
+        <div class="col-12">
+          <div class="text-center text-light-grey">
+            <a href="#" class="btn-red-nav mx-4">
+              <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="btn-red-nav mx-4">
+              <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="btn-red-nav mx-4">
+              <i class="fa fa-envelope-open-o fa-2x" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
     `);

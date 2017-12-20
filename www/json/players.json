@@ -1,96 +1,56 @@
 [
   {
-    "name": "awt",
+    "name": "afea",
     "type": "Human",
-    "score": 0
-  },
-  {
-    "name": "awrt",
-    "type": "Human",
-    "score": 0
-  },
-  {
-    "name": "qrg",
-    "type": "Human",
-    "score": 0
-  },
-  {
-    "name": "1",
-    "type": "Human",
-    "score": 0
-  },
-  {
-    "name": "2",
-    "type": "Human",
-    "score": 0
-  },
-  {
-    "name": "asfe",
-    "type": "Human",
-    "score": 0
+    "score": 4
   },
   {
     "name": "Andre",
     "type": "Human",
-    "score": 0
+    "score": 4
   },
   {
-    "name": "qerg",
+    "name": "q34g",
     "type": "Human",
-    "score": 0
+    "score": 4
   },
   {
-    "name": "arg",
+    "name": "ggag",
     "type": "Human",
-    "score": 0
+    "score": 4
   },
   {
-    "name": "aeg",
+    "name": "sga",
     "type": "Human",
-    "score": 0
+    "score": 4
   },
   {
-    "name": "wrg",
+    "name": "reg",
     "type": "Human",
-    "score": 0
+    "score": 4
+  },
+  {
+    "name": "aaa",
+    "type": "Human",
+    "score": 4
+  },
+  {
+    "name": "afaf",
+    "type": "Human",
+    "score": 4
   },
   {
     "name": "erg",
     "type": "Human",
-    "score": 0
-  },
-  {
-    "name": "aset",
-    "type": "Human",
-    "score": 0
-  },
-  {
-    "name": "aset",
-    "type": "Human",
-    "score": 0
-  },
-  {
-    "name": "wvw",
-    "type": "Human",
-    "score": 0
-  },
-  {
-    "name": "wr",
-    "type": "Human",
-    "score": 0
-  },
-  {
-    "name": "Thomas",
-    "type": "Human",
-    "score": 0
-  },
-  {
-    "name": "Frank",
-    "type": "Human",
-    "score": 0
+    "score": 5
   },
   {
     "name": "Aiko",
+    "type": "Human",
+    "score": 6
+  },
+  {
+    "name": "asrg",
     "type": "Human",
     "score": 6
   },
@@ -103,5 +63,10 @@
     "name": "Otto",
     "type": "Human",
     "score": 12
+  },
+  {
+    "name": "aa",
+    "type": "Human",
+    "score": 4
   }
 ]
