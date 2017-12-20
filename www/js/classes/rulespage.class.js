@@ -7,43 +7,23 @@ class RulesPage extends Base{
 
 	renderRulesPage(){
 		$('.rulespagecontent').append(`
-			<div>
+			<div class="container">
 				<div class="row">
 					<div class="col-12">
-						<ul class="markers my-4 d-flex justify-content-center">
-							<li></li>
-							<li class="hide"></li>
-							<li class="yellow hide"></li>
-							<li class="yellow"></li>
-							<li class=" hide"></li>
-							<li class=></li>
-							<li class="yellow"></li>
-							<li></li>
-						</ul>
-						<h2 class="font-weight-bold text-center">Hur man spelar 4 i rad</h2>
-						<ul class="markers my-4 d-flex justify-content-center">
-							<li></li>
-							<li class="yellow"></li>
-							<li></li>
-							<li></li>
-							<li class="yellow"></li>
-							<li class="hide"></li>
-							<li class="yellow hide"></li>
-							<li class="hide"></li>
-						</ul>
+						<h2 class="font-weight-bold text-center">Hur man spelar 4 i rad?</h2>
 					</div>
 				</div>
 
 				<div class="row my-4">
 					<div class="col-12 mb-5">
-						<h3 class="text-center font-weight-bold mt-4">Placera 4 av dina marker i en vertikal, horisontell eller diagonal rad!</h3>
+						<h5 class="text-center font-weight-bold mt-4">Placera 4 av dina marker i en vertikal, horisontell eller diagonal rad!</h5>
 					</div>
 				</div>
 
 				<div class="row">
 					<div class="col-12 col-md-4 mb-5">
-						<div class="card">
-							<img class="card-img-top img-fluid" src="/img/rules/rules-3.jpg" alt="Card image cap">
+						<div class="card border-blue">
+							<img class="card-img-top img-fluid" src="/img/rules/rules1.svg" alt="Card image cap">
 							<div class="card-body">
 								<h4 class="card-title font-weight-bold text-center mb-4">Välj motståndare</h4>
 								<ul>
@@ -57,8 +37,8 @@ class RulesPage extends Base{
 					</div>
 
 					<div class="col-12 col-md-4 mb-5">
-						<div class="card">
-							<img class="card-img-top img-fluid" src="/img/rules/rules-2.png" alt="Card image cap">
+						<div class="card border-blue">
+							<img class="card-img-top img-fluid" src="/img/rules/rules2.svg" alt="Card image cap">
 							<div class="card-body">
 								<h4 class="card-title font-weight-bold text-center mb-4">Klicka en kolumn eller plats</h4>
 								<ul>
@@ -70,8 +50,8 @@ class RulesPage extends Base{
 					</div>
 
 					<div class="col-12 col-md-4 mb-5">
-						<div class="card">
-							<img class="card-img-top img-fluid" src="/img/rules/rules-7.png" alt="Card image cap">
+						<div class="card border-blue">
+							<img class="card-img-top img-fluid" src="/img/rules/rules3.svg" alt="Card image cap">
 							<div class="card-body">
 								<h4 class="card-title font-weight-bold text-center mb-4">Kolla alla riktningar</h4>
 								<ul>
@@ -81,8 +61,7 @@ class RulesPage extends Base{
 									</li>
 								</ul>
 								<div>
-									<a href="#" class="btn btn-warning text-light font-weight-bold float-right mt-3">
-										<span class="float-left pr-2">&#X1F3AE</span>Börja spela</a>
+									<a href="spel.html" class="btn btn-red float-right">Spela!</a>
 								</div>
 							</div>
 						</div>

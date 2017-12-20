@@ -1,191 +1,94 @@
-@media screen and (min-width: 768px) {
-  .rules .card {
-    height: 580px;
-  }
-}
-@media screen and (min-width: 992px) {
-  .rules .card {
-    height: 520px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .rules .card {
-    height: 500px;
-  }
-}
-.rules .card img {
-  height: 230px;
-}
-@media screen and (min-width: 576px) {
-  .rules .card img {
-    height: 280px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .rules .card img {
-    height: 200px;
-  }
-}
-@media screen and (min-width: 992px) {
-  .rules .card img {
-    height: 230px;
-  }
-}
-.rules ul {
-  padding-left: 20px;
-}
-.rules ul.markers li {
-  border-radius: 50%;
-  height: 40px;
-  width: 40px;
-  border: 1px solid #ef4644;
-  background-color: #ef4644;
-  list-style-type: none;
-  margin: 10px 15px 15px 10px;
-}
-.rules ul.markers li.yellow {
-  border: 1px solid #ffeb3f;
-  background-color: #ffeb3f;
-}
-.rules ul.markers li.hide {
-  display: none;
-}
-@media screen and (min-width: 576px) {
-  .rules ul.markers li.hide {
-    display: inherit;
-  }
-}
-.rules h2 {
-  font-size: 2.4rem;
-}
-h2.modal-title {
-  font-family: 'Emilys Candy', cursive;
-}
-h2.vinn {
-  font-family: 'Emilys Candy', cursive;
-}
-/* Sticky footer styles
--------------------------------------------------- */
-html {
-  position: relative;
-  min-height: 100%;
+html,
+body {
+  height: 100%;
 }
 body {
-  /* Margin bottom by footer height
-     or slightly more for more space before footer
-  */
-  margin-bottom: 100px;
-}
-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 80px;
-  background-color: #b0b7c1;
-}
-/*
-footer {
-  position: absolute;
-  bottom: 0;
-
-
-  width: 100%;
-  margin: 0 auto;
- background-color: #e6e8ed;
-
-  font-family: 'Aldrich', sans-serif;
-
-  p {
-
-    margin:0;
-    text-align: center;
-  }
-
-  div {
-    float: left;
-    width: 33%;
-  }
-
-  :after {
-  content:  "";
-  display:  table;
-  clear:  both;
-  }
-}
-*/
-/*
-  Other footer height for Boostrap xs, sm
-  (for breakpoint see: https://getbootstrap.com/css/)
-*/
-@media screen and (max-width: 969px) {
-  body {
-    margin-bottom: 300px;
-  }
-  footer {
-    height: 280px;
-  }
-}
-main.start-page div.online {
-  position: absolute;
-  right: 10px;
-  top: 140px;
-}
-@media screen and (min-width: 576px) {
-  main.start-page div.online {
-    top: 230px;
-  }
-}
-@media screen and (min-width: 768px) {
-  main.start-page div.online {
-    top: 70px;
-  }
-}
-@media screen and (min-width: 992px) {
-  main.start-page div.online {
-    top: 110px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  main.start-page div.online {
-    top: 145px;
-  }
-}
-@media screen and (min-width: 768px) {
-  main.start-page .card-body {
-    height: 200px;
-  }
-}
-@media screen and (min-width: 992px) {
-  main.start-page .card-body {
-    height: 140px;
-  }
-}
-@media screen and (min-width: 768px) {
-  main.start-page .card-body {
-    height: 210px;
-  }
-}
-@media screen and (min-width: 992px) {
-  main.start-page .card-body {
-    height: 170px;
-  }
-}
-main.start-page img .card-img-top {
-  height: 170px;
-}
-main.start-page img#plants {
-  width: 101%;
+  display: flex;
+  flex-direction: column;
 }
 header {
-  font-family: 'Rancho', cursive;
-  position: sticky;
-  top: -1px;
-  z-index: 3;
+  min-height: 60px;
+  border-bottom: 1px solid #e86d49;
 }
-body {
-  background-color: #fcfcfc;
-  font-family: 'Zilla Slab', serif;
-  font-size: 18px;
-  line-height: 130%;
-  background: #fff;
+nav {
+  height: 100%;
+  position: absolute !important;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.img-brand {
+  width: 40px;
+}
+main {
+  padding-top: 80px;
+}
+.content {
+  flex: 1 0 auto;
+}
+.bg-light-grey {
+  background-color: #fdffee;
+}
+.text-light-grey {
+  color: #fdffee;
+}
+.bg-red {
+  background-color: #e86d49;
+}
+.text-red {
+  color: #e86d49;
+}
+.text-light-grey {
+  color: #fdffee;
+}
+.bg-blue {
+  background-color: #3074e7;
+}
+.text-blue {
+  color: #3074e7;
+}
+.btn-red-nav {
+  background-color: #e86d49;
+  color: #fdffee;
+  border-radius: 0;
+}
+.btn-red-nav:hover {
+  background-color: #e86d49;
+  color: #fdffee;
+  border-bottom: 1px solid #fdffee;
+  cursor: pointer;
+}
+.btn-red-nav.active {
+  background-color: #e86d49;
+  color: #3074e7;
+}
+.btn-red {
+  background-color: #e86d49;
+  color: #fdffee;
+  border-radius: 0;
+}
+.btn-red:hover {
+  background-color: #3074e7;
+  color: #fdffee;
+  border-bottom: 1px solid #fdffee;
+  cursor: pointer;
+}
+.btn-red.active {
+  background-color: #e86d49;
+  color: #3074e7;
+}
+.btn-white {
+  background-color: #ffffff;
+  color: #e86d49;
+}
+.btn-white:hover {
+  background-color: #ffffff;
+  color: #e86d49;
+  border-bottom: 1px solid #e86d49;
+}
+.btn-white.active {
+  background-color: #e86d49;
+  color: #ffffff;
+}
+.border-blue {
+  border: 1px solid #3074e7;
 }

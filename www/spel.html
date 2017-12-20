@@ -8,61 +8,52 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="/css/libs/bootstrap-4-beta.css">
-    <!-- Application specific CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/main.css">
-
   </head>
 
   <body>
-    <header>
-      <div class="container-fluid p-0">
-        <div class="row">
-          <nav class="col ml-3 navbar navbar-expand-lg navbar-dark bg-secondary">
-            <h1>4 i rad</h1>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse ml-5" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item pl-5">
-                  <a class="nav-link" href="/">Start
-                    <span class="sr-only">(current)</span>
-                  </a>
-                </li>
-                <li class="nav-item pl-5">
-                  <a class="nav-link active" href="spel.html">Spela</a>
-                </li>
-                <li class="nav-item pl-5">
-                  <a class="nav-link" href="rules.html">Spelregler</a>
-                </li>
-                <li class="nav-item pl-5">
-                  <a class="nav-link" href="score.html">Resultat</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
+    <header class="fixed-top bg-red">
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">
+          <img class="img-fluid img-brand" src="/img/logo.svg" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item ">
+              <a class="nav-link btn-red-nav mr-2" href="/">Start
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn-red-nav mr-2 active" href="spel.html">Spela</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn-red-nav mr-2" href="rules.html">Spelregler</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn-red-nav mr-2" href="score.html">Resultat</a>
+            </li>
+          </ul>
         </div>
-      </div>
+      </nav>
     </header>
-
-    <main>
-      <article>
+    <main class="content">
+      <article class="content-inside">
         <section class="container">
           <div class="spelpagecontent">
-            
+
           </div>
         </section>
       </article>
     </main>
 
-    <footer>
-      <div class="container-fluid">
-      <div class="footer-content">
+    <footer class="footer bg-red">
 
-        </div>
-      </div>
     </footer>
 
     <!-- JavaScript libraries -->
@@ -79,8 +70,8 @@
     <script src="/js/classes/player.class.js"></script>
     <script src="/js/classes/board.class.js"></script>
     <script src="/js/classes/game.class.js"></script>
+    <script src="/js/classes/winpop.class.js"></script>
     <script src="/js/classes/score.class.js"></script>
-    <script src="/js/classes/app.class.js"></script>
     <script src="/js/main.js"></script>
   </body>
 

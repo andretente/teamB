@@ -1,31 +1,56 @@
 [
   {
+    "name": "afea",
+    "type": "Human",
+    "score": 4
+  },
+  {
     "name": "Andre",
     "type": "Human",
-    "score": 0
+    "score": 4
   },
   {
-    "name": "qerg",
+    "name": "q34g",
     "type": "Human",
-    "score": 0
+    "score": 4
   },
   {
-    "name": "qrg",
+    "name": "ggag",
     "type": "Human",
-    "score": 0
+    "score": 4
   },
   {
-    "name": "1",
+    "name": "sga",
     "type": "Human",
-    "score": 0
+    "score": 4
   },
   {
-    "name": "2",
+    "name": "reg",
     "type": "Human",
-    "score": 0
+    "score": 4
+  },
+  {
+    "name": "aaa",
+    "type": "Human",
+    "score": 4
+  },
+  {
+    "name": "afaf",
+    "type": "Human",
+    "score": 4
+  },
+  {
+    "name": "erg",
+    "type": "Human",
+    "score": 5
   },
   {
     "name": "Aiko",
+    "type": "Human",
+    "score": 6
+  },
+  {
+    "name": "asrg",
     "type": "Human",
     "score": 6
   },
@@ -38,5 +63,10 @@
     "name": "Otto",
     "type": "Human",
     "score": 12
+  },
+  {
+    "name": "aa",
+    "type": "Human",
+    "score": 4
   }
 ]
