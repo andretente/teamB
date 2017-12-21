@@ -35,13 +35,13 @@
     "score": 50
   },
   {
+    "name": "p2",
+    "type": "Robot",
+    "score": 87
+  },
+  {
     "name": "p1",
     "type": "Robot",
     "score": 90
-  },
-  {
-    "name": "p2",
-    "type": "Robot",
-    "score": 84
   }
 ]
