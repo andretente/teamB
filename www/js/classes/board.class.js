@@ -193,8 +193,8 @@ class Board {
 		if (win) {
 			let winner = win == 1 ? this.game.player1 : this.game.player2;
 
-			let playerInJson = players.find(player => player.name == winner.name); // less to write but same as below
-
+			let playerInJson = players.find(player => player.name == winner.name); 
+		
 			if (playerInJson != undefined) {
 				playerInJson.score++;
 			} else {
