@@ -1,6 +1,7 @@
 let frontPage = new FrontPage();
 let rulesPage = new RulesPage();
 let spelPage = new SpelPage();
+let myHeader = new Header();
 let myFooter = new Footer();
 let game = new Game(); 
 

@@ -1,4 +1,4 @@
-/*jshint esversion: 6*/
+
 class Footer extends Base{
 
   constructor(){
@@ -10,7 +10,9 @@ class Footer extends Base{
 renderFooter(){
   $('footer').append(`
     <div class="container-fluid">
+
       <div class="row col-12 py-2">
+
         <div class="col-12">
           <div class="text-center text-light-grey">
             <a href="#" class="btn-red-nav mx-4">
@@ -24,7 +26,9 @@ renderFooter(){
             </a>
           </div>
         </div>
+        
       </div>
+
     </div>
     `);
   }
