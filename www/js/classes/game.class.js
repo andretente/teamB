@@ -16,6 +16,13 @@ class Game extends Base{
       this.player2 = data.player2;
       delete localStorage.gameData;
     }
+    if (location.pathname == '/board.html') {
+      this.startGame();
+    }
+  }
+
+  startGame(){
+    console.log('starting')
     new Board(this);
   }
 
@@ -87,6 +94,7 @@ class Game extends Base{
     let that = this;
     $(document).on("click", '#btn-addPlayers', function() {
       that.addPlayers();
+      that.startGame();
     });
   }
 }
