@@ -13,15 +13,13 @@ class RulesPage extends Base{
 						<h2 class="font-weight-bold text-center">Hur man spelar 4 i rad?</h2>
 					</div>
 				</div>
-
 				<div class="row my-4">
 					<div class="col-12 mb-5">
 						<h5 class="text-center font-weight-bold mt-4">Placera 4 av dina marker i en vertikal, horisontell eller diagonal rad!</h5>
 					</div>
 				</div>
-
 				<div class="row">
-					<div class="col-12 col-md-4 mb-5">
+					<div class="card-deck">
 						<div class="card border-blue">
 							<img class="card-img-top img-fluid" src="/img/rules/rules1.svg" alt="Card image cap">
 							<div class="card-body">
@@ -32,11 +30,7 @@ class RulesPage extends Base{
 									<li class="card-text mt-3">Spelarna turas om att placera 1 marker per drag.</li>
 								</ul>
 							</div>
-
 						</div>
-					</div>
-
-					<div class="col-12 col-md-4 mb-5">
 						<div class="card border-blue">
 							<img class="card-img-top img-fluid" src="/img/rules/rules2.svg" alt="Card image cap">
 							<div class="card-body">
@@ -47,9 +41,6 @@ class RulesPage extends Base{
 								</ul>
 							</div>
 						</div>
-					</div>
-
-					<div class="col-12 col-md-4 mb-5">
 						<div class="card border-blue">
 							<img class="card-img-top img-fluid" src="/img/rules/rules3.svg" alt="Card image cap">
 							<div class="card-body">

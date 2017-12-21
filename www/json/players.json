@@ -1,58 +1,14 @@
 [
-  {
-    "name": "aa",
+
+{
+    "name": "Tobias",
     "type": "Human",
-    "score": 1
-  },
-  {
-    "name": "h2",
-    "type": "Human",
-    "score": 2
-  },
-  {
-    "name": "sa",
-    "type": "Human",
-    "score": 4
-  },
-  {
-    "name": "2",
-    "type": "Robot",
-    "score": 4
+    "score": 7
   },
   {
     "name": "Anna pc",
     "type": "Robot",
     "score": 9
-  },
-  {
-    "name": "pc2",
-    "type": "Robot",
-    "score": 19
-  },
-  {
-    "name": "te",
-    "type": "Human",
-    "score": 50
-  },
-  {
-    "name": "afaf",
-    "type": "Human",
-    "score": 4
-  },
-  {
-    "name": "erg",
-    "type": "Human",
-    "score": 5
-  },
-  {
-    "name": "Aiko",
-    "type": "Human",
-    "score": 6
-  },
-  {
-    "name": "asrg",
-    "type": "Human",
-    "score": 6
   },
   {
     "name": " Anna",
@@ -65,8 +21,18 @@
     "score": 12
   },
   {
-    "name": "aa",
+    "name": "pc2",
+    "type": "Robot",
+    "score": 19
+  },
+  {
+    "name": "te",
     "type": "Human",
-    "score": 4
+    "score": 50
+  },
+  {
+    "name": "p2",
+    "type": "Robot",
+    "score": 87
   }
 ]

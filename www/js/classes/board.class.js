@@ -28,19 +28,22 @@ class Board {
 	drawBoard() {
 		let html = '';
 		for (let row = 0; row < 6; row++) {
-			html += `<div class="board-row">`;
-			for (let col = 0; col < 7; col++) {
-				let val = this.board[row][col];
-				let playerClass = '';
-				if (val === 0) {
-					playerClass = '';
+			if (row >= 0) {
+				html += `<div class="board-row">`;
+				for (let col = 0; col < 7; col++) {
+					let val = this.board[row][col];
+					let playerClass = '';
+					if (val === 0) {
+						playerClass = '';
+					}
+					else {
+						playerClass = 'player' + val;
+					}
+					html += `<div class="slot ${playerClass}" data-rowid="${row}" data-colid="${col}"></div>`;
 				}
-				else {
-					playerClass = 'player' + val;
-				}
-				html += `<div class="slot ${playerClass}" data-rowid="${row}" data-colid="${col}"></div>`;
+				html += '</div>';
 			}
-			html += '</div>';
+
 		}
 		$('.board').html(html);
 	}
@@ -60,57 +63,32 @@ class Board {
 		$('.board-holder').height(orgH * scaling);
 	}
 
-	clickOnSlot(row, col) {
-		if (this.board[row][col] == 0) {
-			this.board[row][col] = this.currentPlayer;
-			this.drawBoard(); // that normally
-
-			// change player
-			if (this.currentPlayer == 1) {
-				this.currentPlayer = 2;
-				if (this.game.player2.type == 'Robot') {
-					setTimeout(() => {
-						this.computerClick();
-					}, 1000)
-				}
-			}
-			else {
-				this.currentPlayer = 1;
-				if (this.game.player1.type == 'Robot') {
-					console.log('this.game.player1.type', this.game.player1.type);
-					setTimeout(() => {
-						this.computerClick();
-					}, 1000)
-
-				}
-			}
-			this.checkWin();
-		}
-	}
-
 	addClickEvents() {
 		let board = this.board;
 		let that = this;
 		//let check = this;
 
 		$(document).on('click', '.slot', function () {
-			if (that.game.player1.type == 'Robot' && that.currentPlayer == 1) {
-				return;
-			} else if (that.game.player2.type == 'Robot' && that.currentPlayer == 2) {
-				return;
-			}
-
+			//console.log('humanClick','checkWin ' + that.checkWin());
+			// if (that.game.player1.type == 'Robot' && that.currentPlayer == 1) {
+			// 	return;
+			// } else if (that.game.player2.type == 'Robot' && that.currentPlayer == 2) {
+			// 	return;
+			// }
 			let slot = $(this);
 			let col = slot.data('colid');
 			let playerID = that.currentPlayer; //activePlayer
 			let freeSlot;
 
 			for (let row = 0; row < 6; row++) {
-				let val = board[row][col];
-				// console.log('VAL',val);
-				if (val == 0) {
-					freeSlot = row;
+				if (row >= 0) {
+					let val = board[row][col];
+					// console.log('VAL',val);
+					if (val == 0) {
+						freeSlot = row;
+					}
 				}
+
 			}
 
 			that.clickOnSlot(freeSlot, col);
@@ -118,34 +96,78 @@ class Board {
 
 	}
 
+	clickOnSlot(row, col) {
+		if (this.checkWin() == 0 && row >= 0 && row < 6) {
+			//console.log('continue');
+			if (this.board[row][col] == 0) {
+				this.board[row][col] = this.currentPlayer;
+				this.drawBoard(); // that normally
+
+				// change player
+				if (this.currentPlayer == 1) {
+					this.currentPlayer = 2;
+					if (this.game.player2.type == 'Robot') {
+						setTimeout(() => {
+							this.computerClick();
+						}, 1000)
+					}
+					this.checkWin();
+				}
+				else {
+					this.currentPlayer = 1;
+					if (this.game.player1.type == 'Robot') {
+						//console.log('this.game.player1.type', this.game.player1.type);
+						setTimeout(() => {
+							this.computerClick();
+						}, 1000)
+						this.checkWin();
+					}
+				}
+
+			}
+		}
+		else{
+			console.log('no more free slots in this column');
+		}
+
+	}
+
 	computerClick() {
 		let col;
 		let freeSlot;
-
+		//console.log('computerClick','checkWin ' + this.checkWin());
 		// Problem: while-loop will go on forever... = browser will freeze.
 
 		let everythingIsFull = false;
+		if (this.checkWin() == 0) {
+			if (everythingIsFull) {
+				console.log('Robot can not click, the board is full');
+				return;
+			}
 
-		if (everythingIsFull) {
-			console.log('Robot can not click, the board is full');
-			return;
-		}
+			else if(freeSlot == undefined　) {
+				col = Math.floor(Math.random() * 7);
+				for (let row = 0; row < 6; row++) {
+					if (row >= 0) {
+						let val = this.board[row][col];
+						if (val == 0) {
+							freeSlot = row;
+						}
+					}
 
-		while (freeSlot == undefined　) {
-			col = Math.floor(Math.random() * 7);
-			for (let row = 0; row < 6; row++) {
-				let val = this.board[row][col];
-				if (val == 0) {
-					freeSlot = row;
 				}
 			}
+			this.clickOnSlot(freeSlot, col);
 		}
-		this.clickOnSlot(freeSlot, col);
+		else{
+
+		}
+
 	}
 
 	checkWin() {
 		let b = this.board;
-		let win;
+		let win = 0;
 		let freeSlots = false;
 		let that = this;
 		for (let row = 0; row < 6; row++) {
@@ -172,7 +194,7 @@ class Board {
 			let winner = win == 1 ? this.game.player1 : this.game.player2;
 
 			let playerInJson = players.find(player => player.name == winner.name); // less to write but same as below
-		
+
 			if (playerInJson != undefined) {
 				playerInJson.score++;
 			} else {
@@ -183,11 +205,13 @@ class Board {
 				});
 			}
 
+
 			JSON._save('players.json', players);
 			new Winpop(win == 1 ? this.game.player1 : this.game.player2);
 		}
 		else if (!freeSlots) {
 			new Winpop(this.game.player1, this.game.player2);
 		}
+		return win;
 	}
 }

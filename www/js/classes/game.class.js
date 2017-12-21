@@ -22,7 +22,6 @@ class Game extends Base{
   }
 
   startGame(){
-    console.log('starting')
     new Board(this);
   }
 
