@@ -7,7 +7,7 @@ class FrontPage extends Base{
 
 	renderStartPage(){
 		$('.frontpagecontent').append(`
-			<article class="my-2">
+			<article>
         <section class="container">
           <div class="row">
             <div class="col-sm-6">
@@ -22,7 +22,7 @@ class FrontPage extends Base{
 											<img class="w-75 img-fluid float-right" src="/img/logo.svg">
 										</div>
 									</div>
-                  <a href="spel.html" class="btn btn-red">Spela!</a>
+                  <a href="spel.html" class="btn btn-red mt-3">Spela!</a>
                 </div>
               </div>
             </div>

@@ -19,20 +19,6 @@
     "name": "Otto",
     "type": "Human",
     "score": 12
-  },
-  {
-    "name": "pc2",
-    "type": "Robot",
-    "score": 19
-  },
-  {
-    "name": "te",
-    "type": "Human",
-    "score": 50
-  },
-  {
-    "name": "p2",
-    "type": "Robot",
-    "score": 87
   }
+ 
 ]

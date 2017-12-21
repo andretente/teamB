@@ -13,10 +13,10 @@ class SpelPage extends Base{
 	          </div>
 	          <div class="row mt-2">
 	            <div class="col-12 col-md-8 col-lg-8 mx-auto d-inline-flex">
-	              <div class="col-9 m-0 p-0">
+	              <div class="col-8 col-md-9 m-0 p-0">
 	                <input type="text" class="form-control" id="playerName1" aria-label="Spelare namn" placeholder="Spelare Namn">
 	              </div>
-	              <div class="col-3">
+	              <div class="col-4 col-md-3 pr-0">
 	                <select class="form-control" id="type1">
 	                  <option>Human</option>
 	                  <option>Robot</option>
@@ -29,10 +29,10 @@ class SpelPage extends Base{
 	          </div>
 	          <div class="row mt-2">
 	            <div class="col-12 col-md-8 col-lg-8 mx-auto d-inline-flex">
-	              <div class="col-9 m-0 p-0">
+	              <div class="col-8 col-md-9 m-0 p-0">
 	                <input type="text" class="form-control" id="playerName2" aria-label="Spelare namn" placeholder="Spelare Namn">
 	              </div>
-	              <div class="col-3">
+	              <div class="col-4 col-md-3 pr-0">
 	                <select class="form-control" id="type2">
 	                  <option>Human</option>
 	                  <option>Robot</option>
