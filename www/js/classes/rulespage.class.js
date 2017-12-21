@@ -10,17 +10,17 @@ class RulesPage extends Base{
 			<div class="container">
 				<div class="row">
 					<div class="col-12">
-						<h2 class="font-weight-bold text-center">Hur man spelar 4 i rad?</h2>
+						<h2 class="font-weight-bold text-center mt-3">Hur man spelar 4 i rad?</h2>
 					</div>
 				</div>
 				<div class="row my-4">
-					<div class="col-12 mb-5">
-						<h5 class="text-center font-weight-bold mt-4">Placera 4 av dina marker i en vertikal, horisontell eller diagonal rad!</h5>
+					<div class="col-12 mb-3">
+						<h5 class="text-center font-weight-bold mt-2">Placera 4 av dina marker i en vertikal, horisontell eller diagonal rad!</h5>
 					</div>
 				</div>
 				<div class="row">
 					<div class="card-deck">
-						<div class="card border-blue">
+						<div class="card border-blue mb-5">
 							<img class="card-img-top img-fluid" src="/img/rules/rules1.svg" alt="Card image cap">
 							<div class="card-body">
 								<h4 class="card-title font-weight-bold text-center mb-4">Välj motståndare</h4>
@@ -31,7 +31,7 @@ class RulesPage extends Base{
 								</ul>
 							</div>
 						</div>
-						<div class="card border-blue">
+						<div class="card border-blue mb-5">
 							<img class="card-img-top img-fluid" src="/img/rules/rules2.svg" alt="Card image cap">
 							<div class="card-body">
 								<h4 class="card-title font-weight-bold text-center mb-4">Klicka en kolumn eller plats</h4>
@@ -41,7 +41,7 @@ class RulesPage extends Base{
 								</ul>
 							</div>
 						</div>
-						<div class="card border-blue">
+						<div class="card border-blue mb-5">
 							<img class="card-img-top img-fluid" src="/img/rules/rules3.svg" alt="Card image cap">
 							<div class="card-body">
 								<h4 class="card-title font-weight-bold text-center mb-4">Kolla alla riktningar</h4>
@@ -52,7 +52,7 @@ class RulesPage extends Base{
 									</li>
 								</ul>
 								<div>
-									<a href="spel.html" class="btn btn-red float-right">Spela!</a>
+									<a href="spel.html" class="btn btn-red float-right mt-3">Spela!</a>
 								</div>
 							</div>
 						</div>
