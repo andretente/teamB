@@ -87,3 +87,8 @@ main {
 .border-blue {
   border: 1px solid #3074e7;
 }
+a.online-spel {
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+}
