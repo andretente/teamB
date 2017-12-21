@@ -17,18 +17,6 @@ class Base {
       this.init();
     }
   }
-  // Return a html template
-  // Will look for a method called
-  // template + templateNo
-  html(templateNo = ''){
-    let method = 'template' + templateNo;
-    if(!this[method]){ return; }
-    let rendered = $(this[method]());
-    // add an objectId
-    rendered.attr('object-id', objectMemory.indexOf(this));
-    // return rendered html
-    return rendered.get(0).outerHTML;
-  }
 
   defaults(){
     return {};
@@ -69,21 +57,6 @@ class Base {
       }
       callback(newArr);
     });
-  }
-  // Render the result of calling html()
-  // to the DOM
-  render(selector,templateNo = ''){
-    let rendered = this.html(templateNo);
-    // if no selector see if we can find the
-    // element in DOM and rerender it
-    if(!selector){
-      let myId = objectMemory.indexOf(this);
-      $(`[object-id=${myId}]`).replaceWith(rendered);
-    }
-    else {
-      // render it to a specific selector
-      $(selector).html(rendered);
-    }
   }
 
 }
