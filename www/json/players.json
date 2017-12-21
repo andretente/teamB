@@ -1,72 +1,47 @@
 [
   {
-    "name": "afea",
+    "name": "ny",
+    "type": "Human",
+    "score": 1
+  },
+  {
+    "name": "h2",
+    "type": "Human",
+    "score": 2
+  },
+  {
+    "name": "sa",
     "type": "Human",
     "score": 4
   },
   {
-    "name": "Andre",
-    "type": "Human",
+    "name": "2",
+    "type": "Robot",
     "score": 4
   },
   {
-    "name": "q34g",
-    "type": "Human",
-    "score": 4
+    "name": "Anna pc",
+    "type": "Robot",
+    "score": 9
   },
   {
-    "name": "ggag",
-    "type": "Human",
-    "score": 4
+    "name": "pc2",
+    "type": "Robot",
+    "score": 19
   },
   {
-    "name": "sga",
+    "name": "te",
     "type": "Human",
-    "score": 4
+    "score": 50
   },
   {
-    "name": "reg",
-    "type": "Human",
-    "score": 4
+    "name": "p2",
+    "type": "Robot",
+    "score": 87
   },
   {
-    "name": "aaa",
-    "type": "Human",
-    "score": 4
-  },
-  {
-    "name": "afaf",
-    "type": "Human",
-    "score": 4
-  },
-  {
-    "name": "erg",
-    "type": "Human",
-    "score": 5
-  },
-  {
-    "name": "Aiko",
-    "type": "Human",
-    "score": 6
-  },
-  {
-    "name": "asrg",
-    "type": "Human",
-    "score": 6
-  },
-  {
-    "name": " Anna",
-    "type": "Human",
-    "score": 10
-  },
-  {
-    "name": "Otto",
-    "type": "Human",
-    "score": 12
-  },
-  {
-    "name": "aa",
-    "type": "Human",
-    "score": 4
+    "name": "p1",
+    "type": "Robot",
+    "score": 90
   }
 ]
