@@ -1,7 +1,6 @@
-class Header extends Base{
+class Header{
 
 	constructor(){;
-	super();
 	this.renderHeader();
 	if (location.pathname == '/') {
 		$('.home').addClass('active');

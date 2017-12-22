@@ -1,7 +1,6 @@
-class Winpop extends Base{
+class Winpop{
 
   constructor(winner,draw){
-    super();
     this.winner = winner;
     this.draw = draw; // second player if draw
     this.renderWinpop();

@@ -1,22 +1,12 @@
 [
   {
-    "name": "abtb",
-    "type": "Robot",
-    "score": 4
-  },
-  {
-    "name": "Aiko",
-    "type": "Human",
-    "score": 7
-  },
-  {
     "name": "Donald Duck",
     "type": "Human",
     "score": 7
   },
   {
-    "name": "wehwe",
-    "type": "Robot",
+    "name": "Aiko",
+    "type": "Human",
     "score": 7
   },
   {
@@ -40,33 +30,13 @@
     "score": 12
   },
   {
-    "name": "aerh",
-    "type": "Robot",
-    "score": 12
-  },
-  {
-    "name": "wrwyq",
-    "type": "Human",
-    "score": 12
-  },
-  {
     "name": "Andre",
     "type": "Human",
-    "score": 17
+    "score": 9
   },
   {
     "name": "Terminator",
     "type": "Robot",
     "score": 17
-  },
-  {
-    "name": "awgawrg",
-    "type": "Human",
-    "score": 17
-  },
-  {
-    "name": "qw4yq4y",
-    "type": "Robot",
-    "score": 16
   }
 ]

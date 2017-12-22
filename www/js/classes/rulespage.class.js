@@ -1,7 +1,6 @@
-class RulesPage extends Base{
+class RulesPage {
 
 	constructor(){
-		super();
 		this.renderRulesPage();
 	}
 

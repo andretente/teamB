@@ -1,7 +1,6 @@
-class SpelPage extends Base{
+class SpelPage {
 
 	constructor(){
-		super();
 		this.renderSpelPage();
 	}
 
@@ -9,7 +8,7 @@ class SpelPage extends Base{
 		$('.spelpagecontent').append(`
 			<div>
 				<h1 class="pb-4 mt-4 text-center">Ange namn</h1>
-	          	<div class="row mt-4">
+	          	<div class="row mt-4 mb-4">
 	            	<h3 class="col-12 col-md-8 col-lg-8 mx-auto">Spelare 1</h3>
 	          	</div>
 	          	<div class="row mt-2">

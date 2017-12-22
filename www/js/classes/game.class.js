@@ -1,6 +1,5 @@
-class Game extends Base{
+class Game {
   constructor() {
-    super();
     JSON._classes(Player);
     this.players = [];
     this.currentPlayer = 1;

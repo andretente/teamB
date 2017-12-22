@@ -1,8 +1,6 @@
-
-class Footer extends Base{
+class Footer {
 
   constructor(){
-    super();
     this.renderFooter();
   }
 

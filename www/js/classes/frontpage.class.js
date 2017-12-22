@@ -1,7 +1,6 @@
-class FrontPage extends Base{
+class FrontPage{
 
 	constructor(){
-		super();
 		this.renderStartPage();
 	}
 
