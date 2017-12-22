@@ -11,7 +11,7 @@ class RulesPage extends Base{
 				<h1 class="pb-4 mt-4 text-center">Spelregler</h1>
 				<div class="row">
 					<div class="col-12">
-						<h3 class="font-weight-bold text-center mt-3">Hur man spelar 4 i rad?</h3>
+						<h3 class="font-weight-bold text-center mt-3">Hur spelar man 4 i rad?</h3>
 						<h5 class="text-center font-weight-bold mt-2">Placera 4 av dina marker i en vertikal, horisontell eller diagonal rad!</h5>
 					</div>
 				</div>
