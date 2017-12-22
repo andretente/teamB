@@ -93,26 +93,20 @@ class Board {
 		let board = this.board;
 		let playerID = this.currentPlayer;
 		let freeSlot;
-		let col = Math.floor(Math.random() * this.initCol);
-		for (let row = 0; row < this.initRow; row++) {
-			let val = board[row][col];
-			if (val == 0) {
-				freeSlot = row;
+		let col;
+		do {
+			col =  Math.floor(Math.random() * 7);
+			for (let row = 0; row < 6; row++) {
+				let val = board[row][col];
+				if (val == 0) {
+					freeSlot = row;
+				}
 			}
-		}
-		if (freeSlot != undefined) {
-			board[freeSlot][col] = playerID;
-			this.drawBoard();
-			this.checkWin();
-		}
-		else{
-			// Needs improvement
-			this.initCol--;
-			this.initRow = 6;
-			console.log('new col' + this.initCol);
-			this.drawBoard();
-			this.checkWin();
-		}
+		} while (!freeSlot);
+		board[freeSlot][col] = playerID;
+		this.drawBoard();
+		this.checkWin();
+
 	}
 
 	checkWin(scorePlayer1, scorePlayer2) {
