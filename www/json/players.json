@@ -7,7 +7,7 @@
   {
     "name": "Aiko",
     "type": "Human",
-    "score": 7
+    "score": 4
   },
   {
     "name": "Johan",
@@ -18,5 +18,15 @@
     "name": "Tobias",
     "type": "Human",
     "score": 9
+  },
+  {
+    "name": "Andre",
+    "type": "Human",
+    "score": 10
+  },
+  {
+    "name": "wraaw",
+    "type": "Human",
+    "score": 4
   }
 ]
