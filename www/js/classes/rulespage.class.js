@@ -32,7 +32,7 @@ class RulesPage extends Base{
 						<div class="card border-blue mb-5">
 							<img class="card-img-top img-fluid" src="/img/rules/rules2.svg" alt="Card image cap">
 							<div class="card-body">
-								<h4 class="card-title font-weight-bold text-center mb-4">Klicka en kolumn eller plats</h4>
+								<h4 class="card-title font-weight-bold text-center mb-4">Klicka på en kolumn eller plats</h4>
 								<ul>
 									<li class="card-text mt-3">När man klickar på en kolumn eller en plats faller en marker ner.</li>
 									<li class="card-text mt-3">Försök sätta en vinnande rad, samtidigt som du hindrar motspelaren från att vinna.</li>
