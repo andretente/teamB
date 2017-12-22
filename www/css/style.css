@@ -45,6 +45,7 @@ main {
   color: #fdffee;
   border-bottom: 1px solid transparent;
   border-radius: 0;
+  width: fit-content;
 }
 .btn-red-nav:hover {
   background-color: #e86d49;
@@ -86,9 +87,4 @@ main {
 }
 .border-blue {
   border: 1px solid #3074e7;
-}
-a.online-spel {
-  position: absolute;
-  bottom: 15px;
-  right: 20px;
 }

@@ -16,7 +16,6 @@
 	overflow: hidden;
 	margin: 20px auto;
 	background-color: #FDFFEE;
-	/* set width and height from js */
 }
 
 .board {
@@ -29,12 +28,10 @@
 
  .player1 {
 	background-color: #3074E7;
-	/* background-image: url(/img/player1.svg); */
 }
 
 .player2 {
 	background-color: #E86D49;
-	/* background-image: url(/img/player2.svg); */
 }
 
 .cancel-button {

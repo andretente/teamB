@@ -8,18 +8,16 @@ class RulesPage extends Base{
 	renderRulesPage(){
 		$('.rulespagecontent').append(`
 			<div class="container">
+				<h1 class="pb-4 mt-4 text-center">Spelregler</h1>
 				<div class="row">
 					<div class="col-12">
-						<h2 class="font-weight-bold text-center mt-3">Hur man spelar 4 i rad?</h2>
-					</div>
-				</div>
-				<div class="row my-4">
-					<div class="col-12 mb-3">
+						<h3 class="font-weight-bold text-center mt-3">Hur man spelar 4 i rad?</h3>
 						<h5 class="text-center font-weight-bold mt-2">Placera 4 av dina marker i en vertikal, horisontell eller diagonal rad!</h5>
 					</div>
 				</div>
-				<div class="row">
-					<div class="card-deck">
+
+				<div class="row mt-4">
+					<div class="card-deck px-3 px-md-3">
 						<div class="card border-blue mb-5">
 							<img class="card-img-top img-fluid" src="/img/rules/rules1.svg" alt="Card image cap">
 							<div class="card-body">

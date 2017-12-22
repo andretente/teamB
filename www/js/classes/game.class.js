@@ -54,7 +54,6 @@ class Game extends Base{
     for (let player of players) {
       names.push(player.name);
     }
-
     if (playerName1 === '' || playerName2 === '') {
       $('#btn-addPlayers').attr('data-content', 'Måste välja namner');
       $('#btn-addPlayers').popover('show');
@@ -67,22 +66,8 @@ class Game extends Base{
       if (names.includes(playerName1)) {
         console.log('Player 1 is a returning player');
       }
-      else{
-        // players.push({
-        //   name: this.player1.name,
-        //   type: this.player1.type,
-        //   score: this.player1.score
-        // });
-      }
       if (names.includes(playerName2)) {
         console.log('Player 2 is a returning player');
-      }
-      else{
-        // players.push({
-        //   name: this.player2.name,
-        //   type: this.player2.type,
-        //   score: this.player2.score
-        // });
       }
       location.replace('/board.html');
       $('#btn-addPlayers').popover('hide');

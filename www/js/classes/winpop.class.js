@@ -28,7 +28,6 @@ class Winpop extends Base{
             <div class="modal-footer">
               <a href="/" role="button" class="btn btn-red popover-test" title="Popover title" data-content="Popover body content is set in this attribute.">Stäng</a>
               <a href="/board.html" role="button" class="btn btn-red popover-test" title="Popover title" data-content="Popover body content is set in this attribute.">Spela igen</a>
-              <a href="/spel.html" role="button" class="btn btn-red popover-test" title="Popover title" data-content="Popover body content is set in this attribute.">Byta spelare</a>
             </div>
           </div>
         </div>

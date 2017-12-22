@@ -1,24 +1,32 @@
 [
-
-{
-    "name": "Tobias",
+  {
+    "name": "Aiko",
     "type": "Human",
     "score": 7
   },
   {
-    "name": "Anna pc",
-    "type": "Robot",
+    "name": "Johan",
+    "type": "Human",
+    "score": 8
+  },
+  {
+    "name": "Tobias",
+    "type": "Human",
     "score": 9
   },
   {
-    "name": " Anna",
-    "type": "Human",
-    "score": 10
-  },
-  {
-    "name": "Otto",
+    "name": "Anja",
     "type": "Human",
     "score": 12
+  },
+  {
+    "name": "Andre",
+    "type": "Human",
+    "score": 17
+  },
+  {
+    "name": "Donald Duck",
+    "type": "Human",
+    "score": 7
   }
- 
 ]

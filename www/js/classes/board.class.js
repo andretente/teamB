@@ -8,42 +8,35 @@ class Board {
 			[0, 0, 0, 0, 0, 0, 0],
 			[0, 0, 0, 0, 0, 0, 0]
 		];
-		this.currentPlayer = 1;
+		this.currentPlayer = 1;　
 		this.drawBoard();
 		this.scale();
 		this.game = game;
-
-		if (this.game.player1.type == 'Human' || this.game.player2.type == 'Human') {
-			this.addClickEvents();
-		}
-		if (this.game.player1.type == 'Robot') {
-			setTimeout(() => {
-				this.computerClick();
-			}, 1000)
-		}
-
+		this.scorePlayer1 = 0;
+		this.scorePlayer2 = 0;
+		this.initCol = 7;
+		this.initRow = 6;
+		this.clickEvents();
 		$(window).resize(this.scale);
+		$('.playerTurn').text(this.game.player1.name + ' make a move!');
 	}
 
 	drawBoard() {
 		let html = '';
 		for (let row = 0; row < 6; row++) {
-			if (row >= 0) {
-				html += `<div class="board-row">`;
-				for (let col = 0; col < 7; col++) {
-					let val = this.board[row][col];
-					let playerClass = '';
-					if (val === 0) {
-						playerClass = '';
-					}
-					else {
-						playerClass = 'player' + val;
-					}
-					html += `<div class="slot ${playerClass}" data-rowid="${row}" data-colid="${col}"></div>`;
+			html += `<div class="board-row">`;
+			for (let col = 0; col < 7; col++) {
+				let val = this.board[row][col];
+				let playerClass = '';
+				if (val === 0) {
+					playerClass = '';
 				}
-				html += '</div>';
+				else {
+					playerClass = 'player' + val;
+				}
+				html += `<div class="slot ${playerClass}" data-rowid="${row}" data-colid="${col}"></div>`;
 			}
-
+			html += '</div>';
 		}
 		$('.board').html(html);
 	}
@@ -63,109 +56,66 @@ class Board {
 		$('.board-holder').height(orgH * scaling);
 	}
 
-	addClickEvents() {
+	clickEvents() {
+		if (this.game.player1.type == 'Human' || this.game.player2.type == 'Human'){
+			this.humanClick();
+		}
+		if (this.game.player1.type == 'Robot') {
+			setTimeout(() => {
+				this.robotClick();
+			}, 1000)
+		}
+	}
+
+	humanClick(){
 		let board = this.board;
 		let that = this;
-		//let check = this;
-
 		$(document).on('click', '.slot', function () {
-			//console.log('humanClick','checkWin ' + that.checkWin());
-			// if (that.game.player1.type == 'Robot' && that.currentPlayer == 1) {
-			// 	return;
-			// } else if (that.game.player2.type == 'Robot' && that.currentPlayer == 2) {
-			// 	return;
-			// }
 			let slot = $(this);
 			let col = slot.data('colid');
-			let playerID = that.currentPlayer; //activePlayer
+			let playerID = that.currentPlayer;
 			let freeSlot;
-
 			for (let row = 0; row < 6; row++) {
-				if (row >= 0) {
-					let val = board[row][col];
-					// console.log('VAL',val);
-					if (val == 0) {
-						freeSlot = row;
-					}
+				let val = board[row][col];
+				if (val == 0) {
+					freeSlot = row;
 				}
-
 			}
-
-			that.clickOnSlot(freeSlot, col);
+			if (freeSlot != undefined) {
+				board[freeSlot][col] = playerID;
+				that.drawBoard();
+				that.checkWin();
+			}
 		});
-
 	}
 
-	clickOnSlot(row, col) {
-		if (this.checkWin() == 0 && row >= 0 && row < 6) {
-			//console.log('continue');
-			if (this.board[row][col] == 0) {
-				this.board[row][col] = this.currentPlayer;
-				this.drawBoard(); // that normally
-
-				// change player
-				if (this.currentPlayer == 1) {
-					this.currentPlayer = 2;
-					if (this.game.player2.type == 'Robot') {
-						setTimeout(() => {
-							this.computerClick();
-						}, 1000)
-					}
-					this.checkWin();
-				}
-				else {
-					this.currentPlayer = 1;
-					if (this.game.player1.type == 'Robot') {
-						//console.log('this.game.player1.type', this.game.player1.type);
-						setTimeout(() => {
-							this.computerClick();
-						}, 1000)
-						this.checkWin();
-					}
-				}
-
-			}
-		}
-		else{
-			console.log('no more free slots in this column');
-		}
-
-	}
-
-	computerClick() {
-		let col;
+	robotClick(){
+		let board = this.board;
+		let playerID = this.currentPlayer;
 		let freeSlot;
-		//console.log('computerClick','checkWin ' + this.checkWin());
-		// Problem: while-loop will go on forever... = browser will freeze.
-
-		let everythingIsFull = false;
-		if (this.checkWin() == 0) {
-			if (everythingIsFull) {
-				console.log('Robot can not click, the board is full');
-				return;
+		let col = Math.floor(Math.random() * this.initCol);
+		for (let row = 0; row < this.initRow; row++) {
+			let val = board[row][col];
+			if (val == 0) {
+				freeSlot = row;
 			}
-
-			else if(freeSlot == undefined　) {
-				col = Math.floor(Math.random() * 7);
-				for (let row = 0; row < 6; row++) {
-					if (row >= 0) {
-						let val = this.board[row][col];
-						if (val == 0) {
-							freeSlot = row;
-						}
-					}
-
-				}
-			}
-			this.clickOnSlot(freeSlot, col);
+		}
+		if (freeSlot != undefined) {
+			board[freeSlot][col] = playerID;
+			this.drawBoard();
+			this.checkWin();
 		}
 		else{
-
+			// Needs improvement
+			this.initCol--;
+			this.initRow = 6;
+			console.log('new col' + this.initCol);
+			this.drawBoard();
+			this.checkWin();
 		}
-
 	}
 
-	checkWin() {
+	checkWin(scorePlayer1, scorePlayer2) {
 		let b = this.board;
 		let win = 0;
 		let freeSlots = false;
@@ -189,29 +139,72 @@ class Board {
 				freeSlots = freeSlots || b[row][col] == 0;
 			}
 		}
-
-		if (win) {
-			let winner = win == 1 ? this.game.player1 : this.game.player2;
-
-			let playerInJson = players.find(player => player.name == winner.name); 
-		
-			if (playerInJson != undefined) {
-				playerInJson.score++;
-			} else {
-				players.push({
-					name: winner.name,
-					type: winner.type,
-					score: 1
-				});
-			}
-
-
-			JSON._save('players.json', players);
+		if(win){
 			new Winpop(win == 1 ? this.game.player1 : this.game.player2);
+
+			this.turn(win);
 		}
-		else if (!freeSlots) {
+		else if(!freeSlots){
 			new Winpop(this.game.player1, this.game.player2);
 		}
-		return win;
+		else{
+			this.turn(win);
+		}
+	}
+
+	turn(win){
+		let score = 0;
+		if (win == 0) {
+			let that = this;
+			let current = this.game.player1.name;
+			$('.playerTurn').text( current + ' make a move!');
+			if (this.currentPlayer == 1) {
+				this.currentPlayer = 2;
+				current = this.game.player2.name;
+				that.scorePlayer1++;
+				if (this.game.player2.type == 'Robot') {
+					setTimeout(() => {
+						this.robotClick();
+					}, 1000)
+				}
+			}
+			else {
+				this.currentPlayer = 1;
+				current = this.game.player1.name;
+				that.scorePlayer2++;
+				if (this.game.player1.type == 'Robot') {
+					setTimeout(() => {
+						this.robotClick();
+					}, 1000)
+				}
+			}
+			$('.playerTurn').text( current + ' make a move!');
+		}
+		else if (win == 1) {
+			score = this.scorePlayer1 + 1;
+			let winner = this.game.player1;
+			this.score(score, winner);
+		}
+		else if (win == 2) {
+			score = this.scorePlayer1;
+			let winner = this.game.player2;
+			this.score(score, winner);
+		}
+	}
+
+	score(score, winner) {
+		let playerInJson = players.find(player => player.name == winner.name); //
+		if (playerInJson != undefined) {
+			if (playerInJson.score > score) {
+				playerInJson.score = score;
+			}
+		} else {
+			players.push({
+				name: winner.name,
+				type: winner.type,
+				score: score
+			});
+		}
+		JSON._save('players.json', players);
 	}
 }

@@ -3,14 +3,25 @@ class Header extends Base{
 	constructor(){;
 	super();
 	this.renderHeader();
-
+	if (location.pathname == '/') {
+		$('.home').addClass('active');
+	}
+	if (location.pathname == '/spel.html') {
+		$('.game').addClass('active');
+	}
+	if (location.pathname == '/rules.html') {
+		$('.rules').addClass('active');
+	}
+	if (location.pathname == '/score.html') {
+		$('.score').addClass('active');
+	}
  }
 
  renderHeader(){
  	$('header').append(`
 
  	  <nav class="navbar navbar-expand-md w-100">
-	    <a class="navbar-brand" href="#">
+	    <a class="navbar-brand" href="/">
 	      <img class="img-brand" src="/img/logo.svg" alt="">
 	    </a>
 	    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
@@ -20,18 +31,18 @@ class Header extends Base{
 	    <div class="collapse navbar-collapse" id="navbarNav">
 	      <ul class="navbar-nav">
 	        <li class="nav-item ">
-	          <a class="nav-link btn-red-nav mr-2 active" href="/">Start
+	          <a class="nav-link btn-red-nav mr-2 home" href="/">Start
 	            <span class="sr-only">(current)</span>
 	          </a>
 	        </li>
 	        <li class="nav-item">
-	          <a class="nav-link btn-red-nav mr-2" href="spel.html">Spela</a>
+	          <a class="nav-link btn-red-nav mr-2 game" href="spel.html">Spela</a>
 	        </li>
 	        <li class="nav-item">
-	          <a class="nav-link btn-red-nav mr-2" href="rules.html">Spelregler</a>
+	          <a class="nav-link btn-red-nav mr-2 rules" href="rules.html">Spelregler</a>
 	        </li>
 	        <li class="nav-item">
-	          <a class="nav-link btn-red-nav mr-2" href="score.html">Resultat</a>
+	          <a class="nav-link btn-red-nav mr-2 score" href="score.html">Resultat</a>
 	        </li>
 	      </ul>
 	    </div>
@@ -43,5 +54,3 @@ class Header extends Base{
   }
 
 }
-
-
