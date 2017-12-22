@@ -1,7 +1,7 @@
-class Drawpop extends Base{
+class Drawpop{
 
   constructor(winner,draw){
-    super();
+    
     this.winner = winner;
     this.draw = draw; // second player if draw
     this.renderDrawpop();
