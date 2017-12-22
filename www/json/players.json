@@ -1,6 +1,20 @@
 [
   {
+<<<<<<< Updated upstream
     "name": "Donald Duck",
+=======
+    "name": "o",
+    "type": "Human",
+    "score": 4
+  },
+  {
+    "name": "a",
+    "type": "Human",
+    "score": 6
+  },
+  {
+    "name": "Aiko",
+>>>>>>> Stashed changes
     "type": "Human",
     "score": 7
   },
@@ -20,14 +34,44 @@
     "score": 9
   },
   {
+    "name": "p2",
+    "type": "Robot",
+    "score": 9
+  },
+  {
+    "name": "h1",
+    "type": "Human",
+    "score": 9
+  },
+  {
     "name": "Robocop",
     "type": "Robot",
     "score": 10
   },
   {
+    "name": "h",
+    "type": "Human",
+    "score": 10
+  },
+  {
+    "name": "y",
+    "type": "Human",
+    "score": 11
+  },
+  {
     "name": "Anja",
     "type": "Human",
     "score": 12
+  },
+  {
+    "name": "s",
+    "type": "Human",
+    "score": 13
+  },
+  {
+    "name": "d",
+    "type": "Human",
+    "score": 13
   },
   {
     "name": "Andre",
@@ -38,5 +82,15 @@
     "name": "Terminator",
     "type": "Robot",
     "score": 17
+  },
+  {
+    "name": "v",
+    "type": "Human",
+    "score": 17
+  },
+  {
+    "name": "h2",
+    "type": "Human",
+    "score": 8
   }
 ]

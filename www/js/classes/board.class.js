@@ -139,7 +139,7 @@ class Board {
 			this.turn(win);
 		}
 		else if(!freeSlots){
-			new Winpop(this.game.player1, this.game.player2);
+			new Drawpop(this.game.player1, this.game.player2);
 		}
 		else{
 			this.turn(win);
