@@ -5,6 +5,11 @@
     "score": 7
   },
   {
+    "name": "Donald Duck",
+    "type": "Human",
+    "score": 7
+  },
+  {
     "name": "Johan",
     "type": "Human",
     "score": 8
@@ -13,6 +18,11 @@
     "name": "Tobias",
     "type": "Human",
     "score": 9
+  },
+  {
+    "name": "Robocop",
+    "type": "Robot",
+    "score": 10
   },
   {
     "name": "Anja",
@@ -25,8 +35,8 @@
     "score": 17
   },
   {
-    "name": "Donald Duck",
-    "type": "Human",
-    "score": 7
+    "name": "Terminator",
+    "type": "Robot",
+    "score": 17
   }
 ]

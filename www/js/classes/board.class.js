@@ -18,7 +18,7 @@ class Board {
 		this.initRow = 6;
 		this.clickEvents();
 		$(window).resize(this.scale);
-		$('.playerTurn').text(this.game.player1.name + ' make a move!');
+		$('.playerTurn').text(this.game.player1.name + ' tur!');
 	}
 
 	drawBoard() {
@@ -157,7 +157,7 @@ class Board {
 		if (win == 0) {
 			let that = this;
 			let current = this.game.player1.name;
-			$('.playerTurn').text( current + ' make a move!');
+			//$('.playerTurn').text( current + ' tur!');
 			if (this.currentPlayer == 1) {
 				this.currentPlayer = 2;
 				current = this.game.player2.name;
@@ -178,7 +178,7 @@ class Board {
 					}, 1000)
 				}
 			}
-			$('.playerTurn').text( current + ' make a move!');
+			$('.playerTurn').text( current + ' tur!');
 		}
 		else if (win == 1) {
 			score = this.scorePlayer1 + 1;
