@@ -2,7 +2,20 @@ class RulesPage {
 
 	constructor(){
 		this.renderRulesPage();
+		this.removeAddCarddeck();
+		$(window).resize(() => this.removeAddCarddeck());
 	}
+
+	removeAddCarddeck(){
+		let small = $(window).width() < 768;
+		if(small){
+		  $('.card-deck-x').removeClass('card-deck');
+		}
+		else {
+			$('.card-deck-x').addClass('card-deck');
+		}
+	}
+
 
 	renderRulesPage(){
 		$('.rulespagecontent').append(`
@@ -16,7 +29,7 @@ class RulesPage {
 				</div>
 
 				<div class="row mt-4">
-					<div class="card-deck px-3 px-md-3">
+					<div class="card-deck-x px-3 px-md-3">
 						<div class="card border-blue mb-5">
 							<img class="card-img-top img-fluid" src="/img/rules/rules1.svg" alt="Card image cap">
 							<div class="card-body">

@@ -2,6 +2,18 @@ class FrontPage{
 
 	constructor(){
 		this.renderStartPage();
+		this.removeAddCarddeck();
+		$(window).resize(() => this.removeAddCarddeck());
+	}
+
+	removeAddCarddeck(){
+		let small = $(window).width() < 992;
+		if(small){
+		  $('.card-deck-x').removeClass('card-deck');
+		}
+		else {
+			$('.card-deck-x').addClass('card-deck');
+		}
 	}
 
 	renderStartPage(){
@@ -34,7 +46,7 @@ class FrontPage{
 			            </div>
 			        </div>
 			        <div class="row mt-5">
-						<div class="card-deck px-3 px-md-3">
+						<div class="card-deck-x px-3 px-md-3">
 							<div class="card mb-5 border-blue">
 								<img class="card-img-top" src="/img/plants-3.jpg" alt="Card image cap">
 								<div class="card-body">
