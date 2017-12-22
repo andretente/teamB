@@ -5,6 +5,11 @@
     "score": 4
   },
   {
+    "name": "1",
+    "type": "Human",
+    "score": 5
+  },
+  {
     "name": "Aiko",
     "type": "Human",
     "score": 4
@@ -12,7 +17,7 @@
   {
     "name": "Johan",
     "type": "Human",
-    "score": 8
+    "score": 4
   },
   {
     "name": "Tobias",
@@ -20,8 +25,48 @@
     "score": 9
   },
   {
+    "name": "Robocop",
+    "type": "Robot",
+    "score": 10
+  },
+  {
+    "name": "2",
+    "type": "Robot",
+    "score": 11
+  },
+  {
+    "name": "Anja",
+    "type": "Human",
+    "score": 12
+  },
+  {
+    "name": "aerh",
+    "type": "Robot",
+    "score": 12
+  },
+  {
+    "name": "wrwyq",
+    "type": "Human",
+    "score": 12
+  },
+  {
+    "name": "qw4yq4y",
+    "type": "Robot",
+    "score": 16
+  },
+  {
     "name": "Andre",
     "type": "Human",
     "score": 10
+  },
+  {
+    "name": "Terminator",
+    "type": "Robot",
+    "score": 17
+  },
+  {
+    "name": "awgawrg",
+    "type": "Human",
+    "score": 17
   }
 ]
