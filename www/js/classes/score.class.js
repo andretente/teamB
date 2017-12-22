@@ -9,7 +9,7 @@ class Score extends Base {
     $('.score-list').append(`
       <article class="mt-2">
         <section class="container">
-        <h1 class="pb-4 mt-4 text-center">Resultat</h1>
+          <h1 class="pb-4 mt-4 text-center">Resultat</h1>
         </section>
       </article>
     `);

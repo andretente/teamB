@@ -13,7 +13,7 @@ class Winpop extends Base{
     $('main').append(`
 
       <button type="button" class="btn btn-primary mt-2 mt-5" data-toggle="modal" data-target="#exampleModal">
-      Du vinn !
+      Du vann !
       </button>
 
       <div class="modal fade" id="main-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
