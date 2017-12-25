@@ -23,7 +23,7 @@ class Header{
 	      		<img class="img-brand" src="/img/logo.svg" alt="">
 	    	</a>
 	    	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-	      		<span class="navbar-toggler-icon"><i class="fa fa-bars text-light-grey" aria-hidden="true"></i></span>
+	      		<span class="navbar-toggler-icon"><i class="fa fa-bars fa-2x text-light-grey" aria-hidden="true"></i></span>
 	    	</button>
 	    	<div class="collapse navbar-collapse" id="navbarNav">
 	      		<ul class="navbar-nav">

@@ -172,7 +172,7 @@ class Board {
 					}, 1000)
 				}
 			}
-			$('.playerTurn').text( current + ' tur!');
+			$('.playerTurn').text( current + 's' + ' tur!');
 		}
 		else if (win == 1) {
 			score = this.scorePlayer1 + 1;

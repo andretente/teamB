@@ -23,7 +23,7 @@ class Drawpop{
               <h2 class="modal-title text-light-grey" id="exampleModalLabel">Hej!</h2>
             </div>
             <div class="modal-body">
-            <h2 class="vinn">Det var oavgjort! Försök igen!<span>&#x1F60A</span></h2>
+            <h2 class="vinn">Det var oavgjort! Försök igen!</h2>
             </div>
             <div class="modal-footer">
               <a href="/" role="button" class="btn btn-red popover-test" title="Popover title" data-content="Popover body content is set in this attribute.">Stäng</a>
