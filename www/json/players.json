@@ -5,7 +5,7 @@
     "score": 4
   },
   {
-    "name": "Johan",
+    "name": "Tom",
     "type": "Human",
     "score": 4
   },
@@ -16,6 +16,11 @@
   },
   {
     "name": "Anna",
+    "type": "Human",
+    "score": 4
+  },
+  {
+    "name": "Johan",
     "type": "Human",
     "score": 4
   },
@@ -50,8 +55,8 @@
     "score": 17
   },
   {
-    "name": "Tom",
-    "type": "Human",
-    "score": 4
+    "name": "pc1",
+    "type": "Robot",
+    "score": 20
   }
 ]

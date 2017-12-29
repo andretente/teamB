@@ -18,7 +18,7 @@ class Board {
 		this.initRow = 6;
 		this.clickEvents();
 		$(window).resize(this.scale);
-		$('.playerTurn').text(this.game.player1.name + ' tur!');
+		$('.playerTurn').text('Din tur ' + this.game.player1.name + '!');
 	}
 
 	drawBoard() {
@@ -172,7 +172,7 @@ class Board {
 					}, 1000)
 				}
 			}
-			$('.playerTurn').text( current + 's' + ' tur!');
+			$('.playerTurn').text('Din tur ' + current + '!');
 		}
 		else if (win == 1) {
 			score = this.scorePlayer1 + 1;
