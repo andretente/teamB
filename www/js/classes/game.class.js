@@ -54,7 +54,7 @@ class Game {
       names.push(player.name);
     }
     if (playerName1 === '' || playerName2 === '') {
-      $('#btn-addPlayers').attr('data-content', 'Måste välja namner');
+      $('#btn-addPlayers').attr('data-content', 'Måste välja namn');
       $('#btn-addPlayers').popover('show');
     }
     else if (playerName1 === playerName2) {

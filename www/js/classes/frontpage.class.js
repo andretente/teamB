@@ -54,27 +54,27 @@ class FrontPage{
 									<p class="card-text">Skydda ett hus från attackerande zombier genom att plantera flera olika plantor. </p>
 								</div>
 								<div class="card-footer">
-									<a href="#" class="btn btn-red float-right">Spela</a>
+									<a href="http://www.spelo.se/action/plants-vs-zombies" class="btn btn-red float-right">Spela</a>
 								</div>
 							</div>
 							<div class="card mb-5 border-blue">
-								<img class="card-img-top" src="/img/pengu-3.jpg" alt="Card image cap">
+								<img class="card-img-top" src="/img/running-panda.png" alt="Card image cap">
 								<div class="card-body">
-									<h4 class="card-title">Pengu</h4>
-									<p class="card-text">Till skillnad från den klassiska Bomberman spelar man som namnet på spelet redan föreslår som en pingvin.</p>
+									<h4 class="card-title">Running Panda</h4>
+									<p class="card-text">Spring och hoppa för att samla bambu i detta spel där du är en panda.</p>
 								</div>
 								<div class="card-footer">
-									<a href="#" class="btn btn-red float-right">Spela</a>
+									<a href="http://www.spelo.se/djur/running-panda?q=running%20pan" class="btn btn-red float-right">Spela</a>
 								</div>
 							</div>
 							<div class="card mb-5 border-blue">
 								<img class="card-img-top" src="/img/heroes.jpg" alt="Card image cap">
 								<div class="card-body">
-									<h4 class="card-title">Heroes</h4>
+									<h4 class="card-title">Guns n Glory Heroes</h4>
 									<p class="card-text">Anslut dig till hjältarna i deras krig mot ondskan och skriv historia.</p>
 								</div>
 								<div class="card-footer">
-									<a href="#" class="btn btn-red float-right">Spela</a>
+									<a href="http://www.spelo.se/action/guns-n-glory-heroes" class="btn btn-red float-right">Spela</a>
 								</div>
 							</div>
 						</div>
