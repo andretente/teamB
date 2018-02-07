@@ -1,4 +1,4 @@
-# earth-action
+# 4 in a row
 
 Exercise:
 - Program the classic game 4 in a row as a web-based online game.
